@@ -29,3 +29,6 @@ Route::namespace('Auth')->group(function () {
 
 
 });
+
+// front::routes();
+Route::get('/Abak', 'HomefrontController@Abakhome')->name('Abakhome');
