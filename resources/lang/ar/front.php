@@ -2,15 +2,12 @@
 
 return [
 
-    'Register'                   => 'تسجيل',
-    'Quran endowments'                   => 'مصاحف الوقف',
-    'A service platform to facilitate the processing, printing, publishing and distribution of the Noble Qur’an with its different narratives, editions and volumes, and everything related to it, according to quality standards, and scientific and technical arbitration through specialized bodies and work teams, to link the platform between supply and demand, so it determines which version is needed, the required number, and the target location, Affordable and high quality.'                   => 'منصة خدمية لتسهيل تجهيز وطباعة ونشر وتوزيع المصحف الشريف باختلاف رواياته وطبعاته وأحجامه، وكل ما يتعلق به، وفق معايير الجودة، والتحكِيم العلمي والفني من خلال جهات وفرق عمل متخصصة، لتربط المنصة بين العرض والطلب، فتحدد النسخة ذات الاحتياج، والعدد المطلوب، والمكان المستهدف، بتكاليف مناسبة وجودة عالية.',
-    'Register Service requester'                   => 'تسجيل طالب الخدمة',
-    'Register Beneficiary'                   => 'تسجيل جهة مستفيدة',  
-    'register Service provider'                   => 'تسجيل مزود خدمة',            
-    'Register '                  => 'تسجيل',
-    'Register'                   => 'تسجيل طالب الخدمة',
-    'Register'                  => 'تسجيل',
+    'About us'              => 'من نحن',   
+    'Policies and procedural guides'              => 'السياسات والأدلة الإجرائية', 
+    'Our initiative'                   => 'مبادرتنا',  
+    'Our vision'                   => 'رؤيتنا',      
+    'Our Message'                   => 'رسالتنا',      
+
     'Password'                   => 'كلمة المرور',  
     'First Name'                 => 'الاسم الأول',   
     'Last Name'                  => 'الكنية',    
