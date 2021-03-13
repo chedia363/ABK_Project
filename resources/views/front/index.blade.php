@@ -13,4 +13,5 @@
 @include('layouts.front.messages')
 @include('layouts.front.develop')
 @include('layouts.front.partners')
+@include('layouts.front.map')
 @endsection

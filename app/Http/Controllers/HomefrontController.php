@@ -10,4 +10,12 @@ class HomefrontController extends Controller
     {
         return view('front.index');
     }
+    public function initiative()
+    {
+        return view('layouts.front.initiative');
+    }
+    public function members()
+    {
+        return view('layouts.front.members');
+    }
 }

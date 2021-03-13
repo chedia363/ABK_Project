@@ -17,6 +17,29 @@ body {
   font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
   src: url("../fonts/ArbFONTS-GE_Dinar_Two_Light-1.otf");
 }
+@font-face {
+  font-family: "ArbFONTS-GE-Dinar-One-Medium";
+  src: url("../fonts/ArbFONTS-GE-Dinar-One-Medium.otf");
+}
+@font-face {
+  font-family: "ArbFONTS-GE-Dinar-Two-Medium-2";
+  src: url("../fonts/ArbFONTS-GE-Dinar-Two-Medium-2.otf");
+}
+@font-face {
+  font-family: "ArbFONTS-Almarai-Regular";
+  src: url("../fonts/ArbFONTS-Almarai-Regular.ttf");
+}
+@font-face {
+  font-family: "Geeza Pro Bold";
+  src: url("../fonts/Geeza Pro Bold.ttf");
+}
+
+@font-face {
+  font-family: "Hacen Saudi Arabia";
+  src: url("../fonts/Hacen Saudi Arabia.ttf");
+}
+
+
 
 a {
   color: #e03a3c;
@@ -104,8 +127,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 160px;
-  width:160px;
+  max-height: 180px;
+  margin-top: -15px;
 }
 
 @media (max-width: 992px) {
@@ -143,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: GE dinar two;
   color: #aa802d;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
 }
 
@@ -380,10 +403,15 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center no-repeat;
-  background-size: cover;
   position: relative;
   padding-top: 82px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#hero video{
+  width:100%;
+  position: absolute;
 }
 #vision{
   width: 100%;
@@ -391,26 +419,54 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/back01.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
+  direction: rtl;
+}
+#messagesabk{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  direction: rtl;
+  background: #0c233f;
 }
 #vision .imgmotifcircle{
   position: absolute;
   left: 0;
   bottom: 0;
-  opacity: .6;
   width: 50%;
+}
+#messagesabk .imgmotifcirclee{
+  position: absolute;
+  left: 0;
+  width: 26%;
 }
 #vision h3{
   background: #fff;
-  width: 60%;
+  width: 50%;
   justify-content: center;
   padding: 10px 20px;
   text-align: center;
   box-shadow: 1px 8px 6px -4px rgb(0 0 0 / 16%);
   border-radius: 50px;
   color: #aa802d;
-  font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
+font-family: Hacen Saudi Arabia;
+  border-radius: 50px;
+  font-size: 3.3rem;
+  align-items: center;
+  margin: auto;
+}
+#messagesabk h3{
+  background: #fff;
+  width: 50%;
+  justify-content: center;
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: 1px 8px 6px -4px rgb(0 0 0 / 16%);
+  border-radius: 50px;
+  color: #aa802d;
+  font-family: 'Hacen Saudi Arabia';
   border-radius: 50px;
   align-items: center;
+  font-size: 3.3rem;
   margin: auto;
 }
 
@@ -463,7 +519,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-height: 500px) {
   #hero {
-    height: 120vh;
+    height: 100vh;
   }
 }
 
@@ -479,27 +535,20 @@ section{
   text-align: center;
   padding-bottom: 30px;
   position: relative;
+  padding:0 5rem;
 }
 
 .section-title h2 {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  font-family: Hacen Saudi Arabia;
+  color: #aa802d;
 }
 
-.section-title h2::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #e03a3c;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
 
 .section-title p {
   margin-bottom: 0;
@@ -510,16 +559,6 @@ section{
   color: #fff;
 }
 
-.section-bg:before {
-  content: "";
-  background: #1b1b1b;
-  position: absolute;
-  bottom: 60px;
-  top: 60px;
-  left: 0;
-  right: 0;
-  transform: skewY(-3deg);
-}
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -580,6 +619,9 @@ section{
   justify-content: center;
   align-items: center;
   padding: 0 20px;
+}
+.owl-carousel.owl-drag .owl-item{
+  width: 22rem;
 }
 
 .clients .owl-item img {
@@ -690,49 +732,6 @@ section{
   }
 }
 
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-  padding-top: 80px;
-}
-
-.counts .count-box {
-  padding: 30px 30px 25px 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.06);
-  border-radius: 4px;
-}
-
-.counts .count-box i {
-  position: absolute;
-  top: -27px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: #fff;
-  padding: 12px;
-  color: #e03a3c;
-  border-radius: 50px;
-  border: 2px solid #fff;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-}
-
-.counts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 700;
-  color: #111111;
-}
-
-.counts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-}
 
 /*--------------------------------------------------------------
 # Tabs
@@ -1225,82 +1224,7 @@ section{
   display: none;
 }
 
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-.team .member {
-  margin-bottom: 20px;
-  overflow: hidden;
-  border-radius: 5px;
-  background: #fff;
-}
 
-.team .member .member-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  right: 0;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  text-align: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: #111111;
-  margin: 0 3px;
-  padding-top: 7px;
-  border-radius: 50px;
-  width: 36px;
-  height: 36px;
-  background: #e03a3c;
-  display: inline-block;
-  transition: ease-in-out 0.3s;
-  color: #fff;
-}
-
-.team .member .social a:hover {
-  background: #111111;
-}
-
-.team .member .social i {
-  font-size: 18px;
-}
-
-.team .member .member-info {
-  padding: 25px 15px;
-}
-
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #111111;
-}
-
-.team .member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
-}
-
-.team .member:hover .social {
-  opacity: 1;
-  bottom: 15px;
-}
 
 /*--------------------------------------------------------------
 # Contact
@@ -2054,7 +1978,7 @@ section{
 #footer {
   color: #fff;
   font-size: 14px;
-  background: #0c233f;
+  background: #1c385b;
 }
 
 #footer .footer-top {
@@ -2223,34 +2147,47 @@ section{
   left: 0;
   right: 0;
   margin: auto;
+  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: -2px 3px 0px 1px rgb(0 0 0 / 20%);
 }
+
 
 .search-input {
   width: 100%;
   font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
   font-size: 16px;
-  padding: 10px 40px 10px 10px;
-  background-color: #eaeaeb;
+  padding: 6px 30px 10px 10px;
+  background-color: #eaeaeb00;
+  border: 1px solid #ddd;
   color: #6c6c6c;
-border-top-left-radius: 6px;
-border-bottom-left-radius: 6px;
-  border: none;
   transition: all .4s;
+ border-top-left-radius: 5px;
+ border-bottom-left-radius: 5px;
 }
 #hero p.titleabak{
 font-size: 15px;
 color: #fff;
 TEXT-ALIGN: center;
-font-family: 'ARBFONTS-GE_DINAR_TWO_LIGHT-1';
+font-family: 'Hacen Saudi Arabia';
 }
 
 #vision p.titleabak{
-  margin-top: 50px;
-  font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
-  font-size: 20px;
+  font-family: Hacen Saudi Arabia;
+  font-size: 1.5rem;
   color: #2b618e;
+  padding: 2rem 5rem;
+  width: 100%;
 
-}
+  }
+  #messagesabk p.titleabak{
+    font-family: 'Hacen Saudi Arabia';
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem 5rem;
+    width: 100%;
+  
+    }
 
 .search-input:focus {
   border:none;
@@ -2299,20 +2236,6 @@ font-family: 'ARBFONTS-GE_DINAR_TWO_LIGHT-1';
 /* style button */
 
 /* messagesabk section */
-#messagesabk
-{
-  background: #0c233f;
-  position: relative;
-  width:100%;
-  height: 100vh;
-}
-#messagesabk img.imgmotifcirclee
-{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 25%;
-}
 
 /* messagesabk section */
 
@@ -2328,27 +2251,34 @@ font-family: 'ARBFONTS-GE_DINAR_TWO_LIGHT-1';
   background-repeat: no-repeat;
   border-bottom: 3px solid #aa802d;
 }
-#developabk .title1
-{
+#developabk .title1 {
   text-align: center;
   background: #fff;
   border-radius: 50px;
-  padding: 13px 10px;
   color: #aa802d;
-  font-weight: bold;
+  justify-content: center;
+  width: 20rem;
+  font-family: Hacen Saudi Arabia;
+  font-weight: 400;
+  font-size: 2.5rem;
   margin-bottom: 30px;
   box-shadow: 2px 3px 14px 2px rgb(0 0 0 / 16%);
+  align-items: center;
+  margin: auto;
 }
 
-#developabk .descriptionabak1
-{
+#developabk .descriptionabak1 {
   background-color: transparent;
-  padding:3rem 3rem;
+  padding: 3rem 3rem;
   border-right: 1px solid #aa802d;
   border-bottom: 1px solid #aa802d;
   position: relative;
   border-bottom-right-radius: 20px;
   margin-bottom: 4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.1;
+  font-family: Hacen Saudi Arabia;
 }
 #developabk .descriptionabak1:before {
   content: "";
@@ -2382,6 +2312,10 @@ font-family: 'ARBFONTS-GE_DINAR_TWO_LIGHT-1';
   position: relative;
   border-bottom-left-radius: 20px;
   margin-bottom: 4rem;
+  font-family: Hacen Saudi Arabia;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.1;
 }
 #developabk .descriptionabak2:before {
   content: "";
@@ -2407,12 +2341,375 @@ font-family: 'ARBFONTS-GE_DINAR_TWO_LIGHT-1';
 }
 #developabk .btn-training{
   background: #0c233f;
-  padding: 0.9rem 3rem;
+  padding: 0.4rem 2.5rem;
   border-radius: 50px;
   color: #aa802d;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 22px;
+  font-family: Hacen Saudi Arabia;
   box-shadow: 2px 3px 14px 2px rgb(0 0 0 / 16%);
 }
 
 /* developabk section */
+
+#map {
+    height: 600px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 17.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.footer-area {
+    background: #0c233f;
+    padding: 30px 0px;
+}
+.footer-area .contactmedia{
+color:#fff;
+}
+.footer-area .content-footerabk{
+  color:#fff;
+  }
+  .footer-area .content-footerabk h3, h4{
+    color:#fff;
+    font-family: ArbFONTS-GE-Dinar-One-Medium !important;
+    font-size: 16px !important;
+    font-weight: 400;
+    }
+    .footer-area .contactmedia li{
+      color: #fff;
+      font-family: ArbFONTS-GE_Dinar_Two_Light-1!important;
+      font-size: 12px !important;
+      line-height: 1.9;
+  
+      }
+      .footer-area .content-footerabk-email h3{
+        color: #fff;
+        font-family: ArbFONTS-GE_Dinar_Two_Light-1!important;
+        font-size: 15px !important;
+        line-height: 1.9;
+    
+        }
+        .footer-area .content-footerabk-email p{
+          color: #fff;
+          font-family: ArbFONTS-GE_Dinar_Two_Light-1!important;
+          font-size: 13px !important;
+          line-height: 1.9;
+      
+          }
+          .footer-area .content-footerabk-right{
+            color: #fff;
+            font-family: Geeza Pro Bold!important;
+            font-size: 14px !important;
+        
+            }
+.footer-area .row{
+  justify-content: center
+  align-items: center;
+  margin: auto;
+}
+
+.footer-text h6 {
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 25px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* section initiative  */
+#initiative .section-title h2{
+  font-size: 35px;
+  margin-bottom: 1rem;
+  position: relative;
+  font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
+  margin-top: 0;
+  direction: rtl;
+  color: #0c233f;
+  float: right;
+}
+
+#initiative .section-title h2:before{
+  position: absolute;
+  right: 0%;
+  top: -7px;
+  height: 50px;
+  width: 7px;
+  margin-right: -30px;
+  background: #aa802d;
+  content: "";
+  z-index: 1;
+}
+.section-padding{
+  padding:30px 0;
+}
+#initiative{
+  background:#e6e6e6;
+}
+#initiative .icon-box h4{
+  color: #aa802d;
+  font-weight: 400;
+  font-size: 25px !important;
+  font-size: 32px;
+  background: #fff;
+  padding: 5px 15px;
+  font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  float: right;
+  direction: rtl;
+  width:auto;
+}
+
+#initiative .icon-box p{
+  font-size: 20px;
+  font-family: GE Dinar Two;
+  float: right;
+  direction: rtl;
+}
+
+/* section initiative  */
+
+
+/* section fields  */
+#fields .section-title h2{
+  font-size: 35px;
+  margin-bottom: 1rem;
+  position: relative;
+  font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
+  margin-top: 0;
+  direction: rtl;
+  color: #0c233f;
+  float: right;
+}
+
+#fields .section-title h2:before{
+  position: absolute;
+  right: 0%;
+  top: -7px;
+  height: 50px;
+  width: 7px;
+  margin-right: -30px;
+  background: #aa802d;
+  content: "";
+  z-index: 1;
+}
+#fields{
+  background:#e6e6e6;
+}
+#fields .icon-box h4{
+  color: #aa802d;
+  font-weight: 400;
+  font-size: 30px !important;
+  font-size: 32px;
+  background: #fff;
+  padding: 5px 15px;
+  font-family: GE Dinar Two;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  float: right;
+  direction: rtl;
+  width:auto;
+}
+
+#fields .icon-box p{
+  font-size: 20px;
+  font-family: GE Dinar Two;
+  float: right;
+  direction: rtl;
+}
+
+/* section fields  */
+
+
+/* responsive */
+@media(max-width:1200px){
+  #footer .social-links {
+    margin-bottom: 20px;
+  }
+  #vision h3{
+    width:100%;
+    font-size: 2.3rem;
+  }
+  #vision p.titleabak {
+    font-family: Hacen Saudi Arabia;
+    font-size: 1.5rem;
+    color: #2b618e;
+    padding: 0.2rem 1rem;
+    width: 100%;
+}
+#vision .imgmotifcircle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+#messagesabk h3 {
+  width: 100%;
+  font-size: 2.3rem;
+}
+#messagesabk p.titleabak {
+  font-family: 'Hacen Saudi Arabia';
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0rem 1rem;
+  width: 100%;
+}
+#messagesabk .imgmotifcirclee {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+#developabk {
+  height: 100%;
+  padding: 2rem 0;
+}
+#developabk .title1 {
+  width: 100%;
+}
+
+  }
+  /* responsive */
+
+  /*--------------------------------------------------------------
+# Fields
+--------------------------------------------------------------*/
+
+.counts .plr-box  {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.counts .plr-box  img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 4px 3px 1px #aa802d;
+}
+
+.counts .plr-box  .pilr-info{
+  margin-top: 40px;
+  background: #fff;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #aa802d;
+}
+.counts .plr-box  .pilr-info h4{
+  margin: auto;
+  font-weight: 600;
+}
+.counts{
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 3rem 0;
+}
+
+  /*--------------------------------------------------------------
+# Fields
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# our programs
+--------------------------------------------------------------*/
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .social a:hover {
+  background: #111111;
+}
+
+.team .member .social i {
+  font-size: 18px;
+}
+
+.team .member .member-info {
+  padding: 25px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #111111;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.team .member:hover .social {
+  opacity: 1;
+  bottom: 15px;
+}
+.team{
+padding: 3rem 0;
+border-radius: 30px;
+border:1px solid #fff;
+}
+.descriptioninlines{
+  font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
+  font-size: 20px;
+  font-weight: 600;
+}
+.doctor1 h3{
+  font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.doctor1 p{
+  font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
+  font-weight: 600;
+  font-size: 20px;
+  color: #aa802d;
+  text-align: center;
+  margin: auto;
+}
+
+.doctor1{
+  background: 222;
+  background: #d4d4d4;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.doctor1:after{
+  content: "";
+  background: transparent;
+  top: 5px;
+  position: absolute;
+  width: 94%;
+  left: 25px;
+  border: 1px solid #aa802d;
+  border-radius: 30px;
+  height: 80%;
+  
+}
+
+
+

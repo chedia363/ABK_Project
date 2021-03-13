@@ -17,7 +17,8 @@ Route::get('/', function () {
 
 Route::get('lang/{lang}', 'LanguageController@switchLang')->name('lang.switch');
 
-// Auth::routes();
+Auth::routes();
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -31,4 +32,6 @@ Route::namespace('Auth')->group(function () {
 });
 
 // front::routes();
-Route::get('/Abak', 'HomefrontController@Abakhome')->name('Abakhome');
+Route::get('/', 'HomefrontController@Abakhome')->name('Abakhome');
+Route::get('/initiative', 'HomefrontController@initiative')->name('initiative');
+Route::get('/members', 'HomefrontController@members')->name('members');

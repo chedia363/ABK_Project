@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
+    src: url("../fonts/ArbFONTS-GE_Dinar_Two_Light-1.otf");
+  }
+  @font-face {
+    font-family: "ArbFONTS-GE-Dinar-One-Medium";
+    src: url("../fonts/ArbFONTS-GE-Dinar-One-Medium.otf");
+  }
+  @font-face {
+    font-family: "ArbFONTS-GE-Dinar-Two-Medium-2";
+    src: url("../fonts/ArbFONTS-GE-Dinar-Two-Medium-2.otf");
+  }
+  @font-face {
+    font-family: "ArbFONTS-Almarai-Regular";
+    src: url("../fonts/ArbFONTS-Almarai-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Geeza Pro Bold";
+    src: url("../fonts/Geeza Pro Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Hacen Saudi Arabia";
+    src: url("../fonts/Hacen Saudi Arabia.ttf");
+  }
+  
+.user-panel > .info > a{
+    text-decoration: none;
+    padding-left: 5px;
+    margin-top: 3px;
+    font-size: 15px;
+    color:#fff;
+    font-family: ArbFONTS-GE_Dinar_Two_Light-1;
+
+}
+.user-panel>.image>img {
+    width: 100%;
+    max-width: 45px;
+    height: auto;
+    border-radius: 50%;
+}
+.badge-warning {
+    color: #212529;
+    background-color: #aa802d;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #aa802d;
+    border-color: #aa802d;
+}
+.text-dark {
+    color: #aa802d!important;
+    background: #fff;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 2rem;
+    padding: 5px 10px;
+    font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
+    font-weight: 600;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #1e3e65;
+    font-family:ArbFONTS-GE_Dinar_Two_Light-1;
+}
+.nav-sidebar .nav-item  i.icongift
+{
+float: left;
+}
+
+.sidebar .nav-treeview .nav-item{
+  width:100%;
+    }
+    .nav-pills>li>a {
+        border-radius: 0;
+        border-top: 3px solid transparent;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        font-family:ArbFONTS-GE_Dinar_Two_Light-1;
+    }
