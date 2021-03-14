@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Contactus;
+use App\Activities;
 use Illuminate\Http\Request;
 
-class AdminContactusController extends Controller
+class AdminActivitiesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,9 @@ class AdminContactusController extends Controller
      */
     public function index()
     {
-        $contactus = Contactus::latest()->paginate(10);
+        $activities = Activities::latest()->paginate(10);
   
-        return view('contactus.index',compact('contactus'))
+        return view('activities.index',compact('activities'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -27,7 +27,7 @@ class AdminContactusController extends Controller
      */
     public function create()
     {
-        return view('contactus.create');
+        return view('activities.create');
     }
 
     /**
@@ -36,77 +36,77 @@ class AdminContactusController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Contactus $contactus)
+    public function store(Request $request, Activities $activities)
     {
         
        
-        $contactus->create($request->all());
+        $activities->create($request->all());
     
     
+           
        
-       
-        return redirect()->route('contactus.index')
+        return redirect()->route('activities.index')
                             ->with('success',__('front.created successfully.'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Contactus  $contactus
+     * @param  \App\Activities  $activities
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        $contactus = Contactus::where('id', $id)->first();
+        $activities = Activities::where('id', $id)->first();
 
-        return view('contactus.show',compact('contactus'));
+        return view('activities.show',compact('activities'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Contactus  $contactus
+     * @param  \App\Activities  $activities
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $contactus = Contactus::where('id', $id)->first();
+        $activities = Activities::where('id', $id)->first();
         
-        return view('contactus.edit',compact('contactus'));
+        return view('activities.edit',compact('activities'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Contactus  $contactus
+     * @param  \App\Activities  $activities
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
        
-       $contactus = Contactus::find($id);
+       $activities = Activities::find($id);
       
-       $contactus->update($request->all());
+       $activities->update($request->all());
 
-        return redirect()->route('contactus.index')
+        return redirect()->route('activities.index')
                         ->with('success',__('front.updated successfully'));
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Contactus  $contactus
+     * @param  \App\Activities  $activities
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
                 
-        $contactus = Contactus::where('id', $id)->first();
+        $activities = Activities::where('id', $id)->first();
 
-        $contactus->delete();
+        $activities->delete();
   
-        return redirect()->route('contactus.index')
+        return redirect()->route('activities.index')
                         ->with('success',__('front.deleted successfully'));
     }
 }

@@ -50,7 +50,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge">15</span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <span class="dropdown-header">
@@ -72,7 +71,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge">15</span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <span class="dropdown-header">
@@ -121,15 +119,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
                with font-awesome or any other icon font library -->
                <li><a href="{{ route('Abakhome') }}"><i class="fa fa-home"></i>@lang('front.Home')</a></li>
                <li class="nav-item has-treeview menu-open">
-                 <a href="#" class="nav-link active">
-                    <i class="fa fa-gift"></i> <span>@lang('front.Our initiative')</span>
-                   <span class="pull-right-container">
-                           <i class="icongift fa fa-angle-left pull-right"></i>
-                   </span>
-                  </a>
+               
                   <ul class="nav nav-treeview">
-                  <li class="nav-item">
+                     <li class="nav-item">
                         <a href="#" class="nav-link active">
+                          <i class="far fa-circle nav-icon"></i>
+                          @lang('front.Our initiative')
+                        </a>
+                      </li>
+
+                     <li class="nav-item @if(request()->segment(1) == 'activities') active @endif">
+                        <a href="{{ route('activities.index') }}" class="nav-link active">
                           <i class="far fa-circle nav-icon"></i>
                           @lang('front.Our activities')
                         </a>
