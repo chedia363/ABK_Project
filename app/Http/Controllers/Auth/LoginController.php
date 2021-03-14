@@ -28,7 +28,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/admin';
 
     /**
      * Create a new controller instance.
@@ -76,7 +76,7 @@ class LoginController extends Controller
                  $this->sendLoginResponse($request);
 
                 //  redirect to dashboard admin
-                return redirect()->intended('/home');
+                return redirect()->intended('/admin');
             }
     
           

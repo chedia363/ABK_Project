@@ -1,4 +1,4 @@
-@extends('fields.layout')
+@extends('layouts.layoutadmin')
    
 @section('content')
     <div class="row">
@@ -54,7 +54,7 @@
 
             <div class="form-group">
                 <label for="cover">@lang('admin.Cover') </label>
-                <input type="file" name="cover" id="cover" class="form-control" required>
+                <input type="file" name="cover" id="cover" class="form-control">
             </div> 
          <div class="row">
        

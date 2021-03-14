@@ -234,7 +234,7 @@
          *  GOOGLE MAP JS
          * ----------------------------------------------------------------------------------------
          */
-        var myCenter = new google.maps.LatLng(23.688272, 90.443162);
+        var myCenter = new google.maps.LatLng(19.9763524, 42.5901672);
 
         function initialize() {
             var mapProp = {
