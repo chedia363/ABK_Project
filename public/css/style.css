@@ -1231,6 +1231,20 @@ section {
   z-index: 1;
 }
 
+@media(max-width:700px){
+  #faq .section-title h2{
+    font-size: 20px;
+  }
+  .faq .faq-list a.collapsed {
+    color: #0c233f;
+    font-size: 15px;
+}
+.faq .faq-list a{
+  padding-right: 0px;
+  font-size: 15px;
+}
+}
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/

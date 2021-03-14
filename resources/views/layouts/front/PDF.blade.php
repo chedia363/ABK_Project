@@ -1,7 +1,6 @@
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-padding" style="margin-top:6rem; background:#e6e6e6;">
       <div class="container" data-aos="fade-up">
-          <hr> <br>
       <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
