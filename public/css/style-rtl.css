@@ -1181,6 +1181,7 @@ section{
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  padding-right: 4rem;
 }
 
 .faq .faq-list a {
@@ -1231,6 +1232,7 @@ section{
 
 .faq .faq-list a.collapsed:hover {
   color: #aa802d;
+  text-decoration: none;
 }
 
 .faq .faq-list a.collapsed .icon-show {

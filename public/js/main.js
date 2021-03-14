@@ -256,3 +256,32 @@
             var map = new google.maps.Map(document.getElementById("map"), mapProp);
         }
         google.maps.event.addDomListener(window, 'load', initialize);
+
+
+             /*
+         * ----------------------------------------------------------------------------------------
+         *  PDF Reader JS
+         * ----------------------------------------------------------------------------------------
+         */
+             PDFJS.getDocument('6.pdf').then(function(pdf) {
+              pdf.getPage(1).then(function(page) {
+                  var scale = 1;
+                  var viewport = page.getViewport(scale);
+                  var canvas = document.getElementById('faq1'); // The id of your canvas
+                  var context = canvas.getContext('2d');
+                  canvas.height = viewport.height;
+                  canvas.width = viewport.width;
+                  var renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                  };
+                  page.render(renderContext);
+              });
+          });
+
+
+                    /*
+         * ----------------------------------------------------------------------------------------
+         *  PDF Reader JS
+         * ----------------------------------------------------------------------------------------
+         */
