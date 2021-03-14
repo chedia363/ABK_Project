@@ -1,5 +1,4 @@
-@extends('layouts.layoutadmin')
-   
+@extends('layouts.layoutadmin')   
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
@@ -39,7 +38,7 @@
                    
                    <div class="form-group col-md-12">
                        <label for="name">@lang('admin.description') </label>
-                       <textarea class="form-control ckeditor" name="description" id="description" rows="5" placeholder="Description" required>{!! $aboutus->description !!}</textarea>
+                       <textarea class="form-control" name="description" id="description" rows="5" placeholder="Description" required>{!! $aboutus->description !!}</textarea>
 
                    </div>
            </div>

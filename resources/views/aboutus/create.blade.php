@@ -37,7 +37,7 @@
             <div class="form-group">
                 <strong>description:</strong>
 
-                <textarea class="form-control ckeditor" name="description" id="description" rows="5" placeholder="Description" required></textarea>
+                <textarea class="form-control" name="description" id="description" rows="5" placeholder="Description" required></textarea>
             </div>
         </div>
         

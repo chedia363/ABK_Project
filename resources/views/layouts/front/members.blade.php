@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-@include('layouts.front.lines')
+@include('layouts.front.lines', ['aboutuss' => $aboutuss])
 @include('layouts.front.public_association')
 @include('layouts.front.timeline')
 @include('layouts.front.social')
