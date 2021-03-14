@@ -459,6 +459,22 @@ return [
     'Events' => 'الفعاليات',
     'Board of Directors' => 'أعضاء مجلس الإدارة',
     'Qualification and training' => 'التأهيل والتدريب',
+
+    'Chairman of Board of Directors' => 'رئيس مجلس الإدارة',
+    'Abdullah bin Maail Al-Qahtani' => 'عبد الله بن معايل القحطاني',
+
+    'Vice Chairman of the Board of Directors' => 'نائب رئيس مجلس الإدارة',
+    'Saad bin Abdullah Al-Qarni' => 'سعد بن عبد القرني',
+
+    'Financial supervisor' => 'المشرف المالي',
+    'Mohammed bin Abdullah Al-Dossary' => 'محمد بن عبدالله الدوسري',
+
+    'Member of the Board of Directors' => 'عضو مجلس الإدارة',
+    
+    'Hamid bin Saad Al-Ghamdi' => 'حامد بن سعد الغامدي',
+
+    'Abdulrahman bin Nasser Al-Maawi' => 'عبدالرحمن بن ناصر المعاوي',
+
     'Various activities that contribute to building and awareness Young people and investing their time in a way that benefits them To benefit and create attractive and distinctive environments for them' => 'فعاليات متنوعة تساهم في بناء وتوعية الشباب واستثمار وقتهم بما يعود عليهم بالفائدة وخلق بيئات جذابة ومميزة لهم',
     'Establishing training and rehabilitating programs for youth To develop them and discover their talents and refine them And enhance their capabilities and potentialQualification and training' => 'إقامة البرامج التدريبية والتأهيلية للشباب لتنميتهم واكتشاف مواهبهم وصقلهـــــا وتعزيز قدراتهم وامكاناتهم',
     'Providing counseling and counseling services for young people Through several specific means that contribute to communication Effective with young people and solving their problems' => 'مبادرات تسهم في توعية وتثقيف الشباب فكريا وسلوكيا وتنمويا',

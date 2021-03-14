@@ -1,5 +1,5 @@
 
-    <section id="initiative" class="about-us-area section-padding">
+    <section id="initiative" class="about-us-area section-padding" style="background:#fff !important;">
         <div class="container">
             <hr>
             <div class="row">

@@ -426,6 +426,19 @@ return [
     'Establishing training and rehabilitating programs for youth To develop them and discover their talents and refine them And enhance their capabilities and potentialQualification and training' => 'Establishing training and rehabilitating programs for youth To develop them and discover their talents and refine them And enhance their capabilities and potentialQualification and training',
     'Providing counseling and counseling services for young people Through several specific means that contribute to communication Effective with young people and solving their problems' => 'Providing counseling and counseling services for young people Through several specific means that contribute to communication Effective with young people and solving their problems',
     'Initiatives that raise awareness and educate youth Intellectually, behaviorally and developmentally' => 'Initiatives that raise awareness and educate youth Intellectually, behaviorally and developmentally',
+    'Chairman of Board of Directors' => 'Chairman of Board of Directors',
+    'Abdullah bin Maail Al-Qahtani' => 'Abdullah bin Maail Al-Qahtani',
 
+    'Vice Chairman of the Board of Directors' => 'Vice Chairman of the Board of Directors',
+    'Saad bin Abdullah Al-Qarni' => 'Saad bin Abdullah Al-Qarni',
+
+    'Financial supervisor' => 'Financial supervisor',
+    'Mohammed bin Abdullah Al-Dossary' => 'Mohammed bin Abdullah Al-Dossary',
+
+    'Member of the Board of Directors' => 'Member of the Board of Directors',
+    
+    'Hamid bin Saad Al-Ghamdi' => 'Hamid bin Saad Al-Ghamdi',
+
+    'Abdulrahman bin Nasser Al-Maawi' => 'Abdulrahman bin Nasser Al-Maawi',
     
 ];
