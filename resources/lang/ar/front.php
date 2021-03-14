@@ -470,7 +470,7 @@ return [
     'Mohammed bin Abdullah Al-Dossary' => 'محمد بن عبدالله الدوسري',
 
     'Member of the Board of Directors' => 'عضو مجلس الإدارة',
-    
+
     'Hamid bin Saad Al-Ghamdi' => 'حامد بن سعد الغامدي',
 
     'Abdulrahman bin Nasser Al-Maawi' => 'عبدالرحمن بن ناصر المعاوي',
@@ -483,7 +483,15 @@ return [
     'President of the General Assembly, Academic University of Bisha' => 'رئيس الجمعية العمومية أكاديمي جامعة بيشة',
     'Prof. Dr. Abdullah bin Maail Al-Qahtani' => 'الأستاذ الدكتور/ عبد الله بن معايل القحطاني',
    
-    
+    'A regulation for appointing the board of directors' => 'لائحة تعيين مجلس الإدارة',
+
+    'Executive Director Appointment Regulations' => 'لائحة تعيين المديرالتنفيذي',
+
+    'List of Chartered Accountant nomenclature' => 'لائحة تسمية المحاسب القانوني',
+
+    'Regulations for the election of the General Assembly' => 'لائحة انتخاب الجمعية العمومية',
+
+    'Committee call list' => 'لائحة دعوة اللجنة',
    
     
 

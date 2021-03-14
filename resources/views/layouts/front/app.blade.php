@@ -96,11 +96,11 @@
                   <li><a href="{{ route('members') }}">@lang('front.Structure of the Board of Directors')</a></li>
                 </ul>
               </li>
-			  <li class="drop-down"><a href="">@lang('front.Policies and procedural guides')</a>
+			  <li class="drop-down"><a href="{{ route('policies') }}">@lang('front.Policies and procedural guides')</a>
                 <ul>
-                  <li><a href="#">@lang('front.Bylaw of the Board of Directors')</a></li>
-                  <li><a href="#">@lang('front.Bylaw for appointing the CEO')</a></li>
-                  <li><a href="#">@lang('front.Bylaw of administrative and financial affairs')</a></li>
+                  <li><a href="{{ route('policies') }}">@lang('front.Bylaw of the Board of Directors')</a></li>
+                  <li><a href="{{ route('policies') }}">@lang('front.Bylaw for appointing the CEO')</a></li>
+                  <li><a href="{{ route('policies') }}">@lang('front.Bylaw of administrative and financial affairs')</a></li>
                 </ul>
               </li>
 			  <li class="drop-down"><a href="{{ route('initiative') }}">@lang('front.Our initiative')</a>
