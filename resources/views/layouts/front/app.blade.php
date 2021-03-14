@@ -39,13 +39,11 @@
 	<link rel="stylesheet" href="{{ asset('vendor/venobox/venobox.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/style-rtl.css') }}">
 	<link rel="stylesheet" href="{{ asset('vendor/aos/aos.css') }}">
-    <link href="{{ asset('fonts/calibri.ttf') }}" rel="stylesheet">
 	<link href="{{ asset('fonts/ArbFONTS-GE-Dinar-One-Medium.otf') }}" rel="stylesheet">
 	<link rel="stylesheet" href="{{ asset('css/font-awesome-rtl.css') }}">
 	<link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap-rtl.css') }}">
 	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     @endif
-    <link rel="stylesheet" href="{{ asset('css/pe-icon-7-stroke.css') }}">
 	<link href="{{ asset('fonts/ArbFONTS-GE-Dinar-One-Medium.otf') }}" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
