@@ -134,8 +134,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           @lang('front.Our activities')
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a href="#" class="nav-link active">
+                      <li class="nav-item @if(request()->segment(1) == 'fields') active @endif">
+                        <a href="{{ route('fields.index') }}" class="nav-link active">
                           <i class="far fa-circle nav-icon"></i>
                           @lang('front.Our fields')
                         </a>
@@ -146,7 +146,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           @lang('front.Our programs')
                         </a>
                       </li>
-                     
+                      <li class="nav-item @if(request()->segment(1) == 'aboutus') active @endif">
+                        <a href="{{ route('aboutus.index') }}" class="nav-link active">
+                          <i class="far fa-circle nav-icon"></i>
+                          @lang('front.About us')
+                        </a>
+                      </li>      
+                      <li class="nav-item @if(request()->segment(1) == 'contactus') active @endif">
+                        <a href="{{ route('contactus.index') }}" class="nav-link active">
+                          <i class="far fa-circle nav-icon"></i>
+                          @lang('front.Contact us')
+                        </a>
+                      </li>                       
+                                     
                   </ul>
                </li>
 
