@@ -228,3 +228,31 @@
   });
 
 })(jQuery);
+
+        /*
+         * ----------------------------------------------------------------------------------------
+         *  GOOGLE MAP JS
+         * ----------------------------------------------------------------------------------------
+         */
+        var myCenter = new google.maps.LatLng(23.688272, 90.443162);
+
+        function initialize() {
+            var mapProp = {
+                zoom: 14,
+                center: myCenter,
+                scrollwheel: false,
+                styles: [{
+                    "stylers": [{
+                            "hue": "#ffffff"
+                        }, {
+                            saturation: -110
+                        },
+                        {
+                            gamma: 2
+                        }]
+                }],
+                mapTpeIdy: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map"), mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);

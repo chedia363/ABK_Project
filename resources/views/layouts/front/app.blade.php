@@ -75,25 +75,25 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xl-10 d-flex align-items-center">
-        <div class="col-xl-2">
+        <div class="col-xl-12 d-flex align-items-center">
+        <div class="col-xl-3">
         <h1 class="logo mr-auto">
-			  <a href="index.html">
+			  <a href="{{ route('Abakhome') }}">
 			  <img src="{{ asset('img/logo.svg') }}" alt="">
 			</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
         </div>
-        <div class="col-xl-7">
+        <div class="col-xl-5">
         <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li class="drop-down"><a href="">@lang('front.About us')</a>
+              <li class="drop-down"><a href="{{ route('members') }}">@lang('front.About us')</a>
                 <ul>
-                  <li><a href="#">@lang('front.in lines')</a></li>
-                  <li><a href="#">@lang('front.The General Assembly')</a></li>
-                  <li><a href="#">@lang('front.Structure of the Board of Directors')</a></li>
+                  <li><a href="{{ route('members') }}">@lang('front.in lines')</a></li>
+                  <li><a href="{{ route('members') }}">@lang('front.The General Assembly')</a></li>
+                  <li><a href="{{ route('members') }}">@lang('front.Structure of the Board of Directors')</a></li>
                 </ul>
               </li>
 			  <li class="drop-down"><a href="">@lang('front.Policies and procedural guides')</a>
@@ -103,17 +103,17 @@
                   <li><a href="#">@lang('front.Bylaw of administrative and financial affairs')</a></li>
                 </ul>
               </li>
-			  <li class="drop-down"><a href="">@lang('front.Our initiative')</a>
+			  <li class="drop-down"><a href="{{ route('initiative') }}">@lang('front.Our initiative')</a>
                 <ul>
-                  <li><a href="#">@lang('front.Our activities')</a></li>
-                  <li><a href="#">@lang('front.Our fields')</a></li>
-                  <li><a href="#">@lang('front.Our programs')</a></li>
+                  <li><a href="{{ route('initiative') }}">@lang('front.Our activities')</a></li>
+                  <li><a href="{{ route('initiative') }}">@lang('front.Our fields')</a></li>
+                  <li><a href="{{ route('initiative') }}">@lang('front.Our programs')</a></li>
                 </ul>
               </li>
             </ul>
           </nav><!-- .nav-menu -->
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-4">
           <div style="display:flex;">
           <div>
             <img src="{{ asset('img/vision.svg') }}" alt="" style="width:90px;">
@@ -133,6 +133,7 @@
 
 <div class="container-fluid" style="padding:0;">
 	@yield('content')
+  @include('layouts.front.footer')
 	</div>
 </div>
 <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
@@ -148,6 +149,8 @@
 <script src="{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
 <script src="{{ asset('vendor/venobox/venobox.min.js') }}"></script>
 <script src="{{ asset('vendor/aos/aos.js') }}"></script>
+<script src="{{ asset('js/gmap3.min.js') }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
 <script src="{{ asset('js/main.js') }}"></script>
 @yield('js')
 </body>

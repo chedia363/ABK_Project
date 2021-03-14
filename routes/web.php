@@ -19,6 +19,7 @@ Route::get('lang/{lang}', 'LanguageController@switchLang')->name('lang.switch');
 
 // Auth::routes();
 
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::namespace('Auth')->group(function () {
@@ -43,3 +44,5 @@ Route::resource('aboutus','AdminAboutusController')->middleware('auth');
 /**ContactUs control panel */
 Route::resource('contactus','AdminContactusController')->middleware('auth');
 
+Route::get('/initiative', 'HomefrontController@initiative')->name('initiative');
+Route::get('/members', 'HomefrontController@members')->name('members');
