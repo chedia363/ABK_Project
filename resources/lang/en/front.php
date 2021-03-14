@@ -440,5 +440,15 @@ return [
     'Hamid bin Saad Al-Ghamdi' => 'Hamid bin Saad Al-Ghamdi',
 
     'Abdulrahman bin Nasser Al-Maawi' => 'Abdulrahman bin Nasser Al-Maawi',
+
+    'A regulation for appointing the board of directors' => 'A regulation for appointing the board of directors',
+
+    'Executive Director Appointment Regulations' => 'Executive Director Appointment Regulations',
+
+    'List of Chartered Accountant nomenclature' => 'List of Chartered Accountant nomenclature',
+
+    'Regulations for the election of the General Assembly' => 'Regulations for the election of the General Assembly',
+
+    'Committee call list' => 'Committee call list',
     
 ];

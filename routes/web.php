@@ -46,3 +46,4 @@ Route::resource('contactus','AdminContactusController')->middleware('auth');
 
 Route::get('/initiative', 'HomefrontController@initiative')->name('initiative');
 Route::get('/members', 'HomefrontController@members')->name('members');
+Route::get('/policies', 'HomefrontController@politics')->name('policies');

@@ -1154,7 +1154,7 @@ section {
 }
 
 .faq .faq-list li {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #fff;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
@@ -1162,7 +1162,10 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: #e03a3c;
+    color: #0c233f;
+    font-size: 23px;
+    font-family: 'ArbFONTS-GE-Dinar-One-Medium';
+    font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1186,11 +1189,14 @@ section {
 }
 
 .faq .faq-list a.collapsed {
-  color: #343a40;
+  color: #0c233f;
+  font-size: 25px;
+  font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
+  font-weight: bold;
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #e03a3c;
+  color: #aa802d;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1199,6 +1205,28 @@ section {
 
 .faq .faq-list a.collapsed .icon-close {
   display: none;
+}
+#faq .section-title h2{
+  font-size: 35px;
+  margin-bottom: 1rem;
+  position: relative;
+  font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
+  margin-top: 0;
+  direction: rtl;
+  color: #0c233f;
+  float: right;
+}
+
+#faq .section-title h2:before{
+  position: absolute;
+  right: 0%;
+  top: -7px;
+  height: 50px;
+  width: 7px;
+  margin-right: -30px;
+  background: #aa802d;
+  content: "";
+  z-index: 1;
 }
 
 /*--------------------------------------------------------------
@@ -1291,10 +1319,22 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #e03a3c;
+  color: #aa802d;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #f8d4d5;
+}
+
+.faq .faq-list .icon-show {
+  color: #aa802d;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.faq .faq-list .icon-close {
+  color: #aa802d;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .contact .info-box h3 {

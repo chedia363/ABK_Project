@@ -18,4 +18,8 @@ class HomefrontController extends Controller
     {
         return view('layouts.front.members');
     }
+    public function politics()
+    {
+        return view('layouts.front.Policies');
+    }
 }
