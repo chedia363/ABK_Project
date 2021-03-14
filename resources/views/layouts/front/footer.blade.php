@@ -5,7 +5,7 @@
                     <div class="col-md-5">
                     <img src="{{ asset('img/logowhite.svg') }}" alt="" style="width:100%;">
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-7">
                         <div class="content-footerabk">
                             <h3>@lang('front.Saudi Arabia')</h3>
                             <h4>@lang('front.Bisha Governorate')</h4>

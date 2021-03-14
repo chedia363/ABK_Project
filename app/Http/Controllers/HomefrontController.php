@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Aboutus;
+
 
 class HomefrontController extends Controller
 {
@@ -16,6 +18,8 @@ class HomefrontController extends Controller
     }
     public function members()
     {
-        return view('layouts.front.members');
+        $aboutuss = Aboutus::first();
+        
+        return view('layouts.front.members', compact('aboutuss'));
     }
 }

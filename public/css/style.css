@@ -2709,9 +2709,10 @@ section {
   border:1px solid #fff;
   }
   .descriptioninlines{
-    font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 600;
+    color: #606060;
+    line-height: 1.6;
   }
    .doctor1 h3{
     font-size: 26px;
@@ -2727,7 +2728,7 @@ section {
   }
   .doctor1{
     background: 222;
-    background: #d4d4d4;
+    background: #ebebeb;
     padding: 10px 10px;
     border-radius: 30px;
     margin-bottom: 20px;
@@ -2744,4 +2745,72 @@ section {
     border-radius: 30px;
     height: 80%;
 
+  }
+
+  .timeline1{
+    background: 222;
+    background: #d4d4d4;
+    padding: 10px 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #fff, #c9c7c7);
+    box-shadow: 0px 4px 0px 0px #0190c1;
+  }
+  .timeline1 p{
+    font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
+    font-weight: 600;
+    font-size: 20px;
+    color: #aa802d;
+    text-align: center;
+    margin: auto;
+  }
+  .timeline1 h3{
+    font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .imgtime2{
+    position: relative;
+  }
+  .imgtime2:after{
+    content: "";
+    position: absolute;
+    background: url(../img/timeline/img02.svg);
+    top: 4rem;
+    left: 13rem;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imgtime3{
+    position: relative;
+  }
+  .imgtime3:after{
+    content: "";
+    position: absolute;
+    background: url(../img/timeline/img03.svg);
+    top: -3.7rem;
+    left: 22.5rem;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media(max-width:1200px){
+    .imgtime3:after,
+    .imgtime2:after{
+      display: none;
+    }
+    #initiative .section-title h2 {
+      font-size: 30px;
+  }
+  
   }

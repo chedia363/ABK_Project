@@ -20,7 +20,7 @@ Route::get('lang/{lang}', 'LanguageController@switchLang')->name('lang.switch');
 // Auth::routes();
 
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index')->name('home');
 
 Route::namespace('Auth')->group(function () {
     Route::get('ABK/login', 'LoginController@showLoginForm')->name('login');

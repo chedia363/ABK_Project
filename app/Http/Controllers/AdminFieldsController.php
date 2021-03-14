@@ -93,15 +93,21 @@ class AdminFieldsController extends Controller
     {
        
        
+        if ($request->hasFile('cover')){
+            $imagesave = $this->saveImage($request->file('cover'));
+            $fieldss = Fields::find($id);
+            $fieldss->cover = $imagesave;
+            $image = $request->file('cover');
+                   
+            $file_name = $image->getClientOriginalName();
+            $fieldss->update(['name'=>$request->name,'description'=>$request->description,'cover'=>$imagesave, 'file_name'=>$file_name]);
+        }else{
 
-        $imagesave = $this->saveImage($request->file('cover'));
-        $fieldss = Fields::find($id);
-        $fieldss->cover = $imagesave;
-       $image = $request->file('cover');
-               
-        $file_name = $image->getClientOriginalName();
-       $fieldss->update(['name'=>$request->name,'description'=>$request->description,'cover'=>$imagesave, 'file_name'=>$file_name]);
-
+           
+            $fieldss = Fields::find($id);
+           
+            $fieldss->update(['name'=>$request->name,'description'=>$request->description]);            
+        }
         return redirect()->route('fields.index')
                         ->with('success','field updated successfully');
     }

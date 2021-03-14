@@ -1,4 +1,4 @@
-@extends('contactus.layout')
+@extends('layouts.layoutadmin')
  
 @section('content')
     <div class="row">

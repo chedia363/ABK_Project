@@ -94,14 +94,23 @@ class AdminProgramsController extends Controller
     {
        
        
+       if ($request->hasFile('cover')){
+          $imagesave = $this->saveImage($request->file('cover'));
+          $program = Programs::find($id);
+          $program->cover = $imagesave;
+          $image = $request->file('cover');
+                  
+           $file_name = $image->getClientOriginalName();
+          $program->update(['name'=>$request->name,'description'=>$request->description,'cover'=>$imagesave, 'file_name'=>$file_name]);
 
-       $imagesave = $this->saveImage($request->file('cover'));
-       $program = Programs::find($id);
-       $program->cover = $imagesave;
-       $image = $request->file('cover');
-               
-        $file_name = $image->getClientOriginalName();
-       $program->update(['name'=>$request->name,'description'=>$request->description,'cover'=>$imagesave, 'file_name'=>$file_name]);
+        }else{
+
+         
+          $program = Programs::find($id);
+         
+          $program->update(['name'=>$request->name,'description'=>$request->description]);
+
+       }
 
         return redirect()->route('programs.index')
                         ->with('success','field updated successfully');

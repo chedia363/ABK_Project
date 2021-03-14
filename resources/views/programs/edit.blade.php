@@ -1,4 +1,4 @@
-@extends('fields.layout')
+@extends('layouts.layoutadmin')
    
 @section('content')
     <div class="row">
@@ -45,10 +45,13 @@
 
             @if(isset($program->cover))
             <div class="form-group">
-            {{ $program->file_name }}
-            <a class="img-fluid" href="{{  asset("storage/$program->cover") }}"><button type="button" class="btn btn-warning  btn-md"><i class="fa fa-download"></i></button></a></span> <br/>
+           
+                <img class="img-fluid" src="{{  asset("storage/$program->cover") }}" style="width: 30%;"></a></span> <br/>
                 <a onclick="return confirm('@lang('admin.Are you sure?')')" href="{{ route('remove.imageprogram', ['program' => $program->id]) }}" class="btn btn-danger">@lang('admin.Remove image?')</a>
+             
+
             </div>
+
             @endif
 
 
