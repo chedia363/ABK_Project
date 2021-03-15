@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Fields;
+use App\Policiesprcduralmanuals;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 
-class AdminFieldsController extends Controller
+class AdminPoliciesprcduralmanualsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class AdminFieldsController extends Controller
      */
     public function index()
     {
-        $fields = Fields::latest()->paginate(10);
+        $policiesprcduralmanuals = Policiesprcduralmanuals::latest()->paginate(10);
   
-        return view('fields.index',compact('fields'))
+        return view('policiesprcduralmanuals.index',compact('policiesprcduralmanuals'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -28,65 +28,66 @@ class AdminFieldsController extends Controller
      */
     public function create()
     {
-        return view('fields.create');
+        return view('policiesprcduralmanuals.create');
     }
 
-    
     public function saveImage(UploadedFile $file) : string
     {
         return $file->store('abk_pictures', ['disk' => 'public']);
     }
+
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Fields $field)
+    public function store(Request $request, Policiesprcduralmanuals $policiesprcduralmanuals)
     {
         $imagesave = $this->saveImage($request->file('cover'));
         $image = $request->file('cover');
                
         $file_name = $image->getClientOriginalName();
-        $field->create(['name'=>$request->name,'description'=>$request->description,'cover'=>$imagesave, 'file_name'=>$file_name]);
+        $policiesprcduralmanuals->create(['name'=>$request->name,'description'=>"",'cover'=>$imagesave, 'file_name'=>$file_name]);
     
     
            
        
-        return redirect()->route('fields.index')
+        return redirect()->route('policiesprcdural.index')
                             ->with('success',__('front.created successfully.'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Fields  $fields
+     * @param  \App\Policiesprcduralmanuals  $policiesprcduralmanuals
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        $fields = Fields::where('id', $id)->first();
+        $policiesprcduralmanuals = Policiesprcduralmanuals::where('id', $id)->first();
 
-        return view('fields.show',compact('fields'));
+        return view('policiesprcduralmanuals.show',compact('policiesprcduralmanuals'));
     }
+
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Fields  $fields
+     * @param  \App\Policiesprcduralmanuals  $policiesprcduralmanuals
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $fieldss = Fields::where('id', $id)->first();
+        $policiesprcduralmanuals = Policiesprcduralmanuals::where('id', $id)->first();
         
-        return view('fields.edit',compact('fieldss'));
+        return view('policiesprcduralmanuals.edit',compact('policiesprcduralmanuals'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Fields  $fields
+     * @param  \App\Policiesprcduralmanuals  $policiesprcduralmanuals
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -95,52 +96,52 @@ class AdminFieldsController extends Controller
        
         if ($request->hasFile('cover')){
             $imagesave = $this->saveImage($request->file('cover'));
-            $fieldss = Fields::find($id);
-            $fieldss->cover = $imagesave;
+            $policiesprcduralmanuals = Policiesprcduralmanuals::find($id);
+            $policiesprcduralmanuals->cover = $imagesave;
             $image = $request->file('cover');
                    
             $file_name = $image->getClientOriginalName();
-            $fieldss->update(['name'=>$request->name,'description'=>$request->description,'cover'=>$imagesave, 'file_name'=>$file_name]);
+            $policiesprcduralmanuals->update(['name'=>$request->name,'description'=>"",'cover'=>$imagesave, 'file_name'=>$file_name]);
         }else{
 
            
-            $fieldss = Fields::find($id);
+            $policiesprcduralmanuals = Policiesprcduralmanuals::find($id);
            
-            $fieldss->update(['name'=>$request->name,'description'=>$request->description]);            
+            $policiesprcduralmanuals->update(['name'=>$request->name,'description'=>""]);            
         }
-        return redirect()->route('fields.index')
+        return redirect()->route('policiesprcdural.index')
                         ->with('success',__('front.updated successfully'));
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Fields  $fields
+     * @param  \App\Policiesprcduralmanuals  $policiesprcduralmanuals
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
                 
-        $fields = Fields::where('id', $id)->first();
+        $policiesprcduralmanuals = Policiesprcduralmanuals::where('id', $id)->first();
 
-        $fields->delete();
+        $policiesprcduralmanuals->delete();
   
-        return redirect()->route('fields.index')
+        return redirect()->route('policiesprcdural.index')
                         ->with('success',__('front.deleted successfully'));
     }
 
-        /**
+    /**
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse
-     */
+    */
     public function removeImage(Request $request)
     {
-        $fieldss = Fields::where('id', $request->only('field'))->first();
-        // $fieldss->delete();
-        $fieldss->update(['name'=>$fieldss->name,'description'=>$fieldss->description,'cover'=>"", 'file_name'=>""]);
+        $policiesprcduralmanuals = Policiesprcduralmanuals::where('id', $request->only('field'))->first();
+       
+        $policiesprcduralmanuals->update(['name'=>$policiesprcduralmanuals->name,'description'=>"",'cover'=>"", 'file_name'=>""]);
 
 
-        return redirect()->route('fields.edit', $request->input('field'))
+        return redirect()->route('policiesprcdural.edit', $request->input('field'))
                         ->with('success',__('front.deleted successfully'));
     }
 }

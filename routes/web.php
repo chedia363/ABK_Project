@@ -45,7 +45,9 @@ Route::resource('aboutus','AdminAboutusController')->middleware('auth');
 Route::resource('contactus','AdminContactusController')->middleware('auth');
 /**Activities control panel */
 Route::resource('activities','AdminActivitiesController')->middleware('auth');
-
+/**Policies control panel */
+Route::resource('policiesprcdural','AdminPoliciesprcduralmanualsController')->middleware('auth');
+Route::get('remove-image-policies', 'AdminPoliciesprcduralmanualsController@removeImage')->name('remove.imagepolicies');
 
 Route::get('/initiative', 'HomefrontController@initiative')->name('initiative');
 Route::get('/members', 'HomefrontController@members')->name('members');

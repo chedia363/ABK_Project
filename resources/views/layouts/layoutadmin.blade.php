@@ -160,7 +160,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           @lang('front.Contact us')
                         </a>
                       </li>  
-
+                      <li class="nav-item @if(request()->segment(1) == 'policiesprcdural') active @endif">
+                        <a href="{{ route('policiesprcdural.index') }}" class="nav-link active">
+                          <i class="far fa-circle nav-icon"></i>
+                          @lang('front.Policies and procedural guides')
+                        </a>
+                      </li> 
 
                   </ul>
                </li>
