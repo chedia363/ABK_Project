@@ -39,13 +39,11 @@
 	<link rel="stylesheet" href="{{ asset('vendor/venobox/venobox.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/style-rtl.css') }}">
 	<link rel="stylesheet" href="{{ asset('vendor/aos/aos.css') }}">
-    <link href="{{ asset('fonts/calibri.ttf') }}" rel="stylesheet">
 	<link href="{{ asset('fonts/ArbFONTS-GE-Dinar-One-Medium.otf') }}" rel="stylesheet">
 	<link rel="stylesheet" href="{{ asset('css/font-awesome-rtl.css') }}">
 	<link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap-rtl.css') }}">
 	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     @endif
-    <link rel="stylesheet" href="{{ asset('css/pe-icon-7-stroke.css') }}">
 	<link href="{{ asset('fonts/ArbFONTS-GE-Dinar-One-Medium.otf') }}" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
@@ -77,8 +75,8 @@
   <header id="header" class="fixed-top">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xl-12 d-flex align-items-center">
-        <div class="col-xl-3">
+        <div class="col-xl-12 col-md-12 d-flex align-items-center">
+        <div class="col-xl-3 col-md-3">
         <h1 class="logo mr-auto">
 			  <a href="{{ route('Abakhome') }}">
 			  <img src="{{ asset('img/logo.svg') }}" alt="">
@@ -86,7 +84,7 @@
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
         </div>
-        <div class="col-xl-5">
+        <div class="col-xl-5 col-md-6">
         <nav class="nav-menu d-none d-lg-block">
             <ul>
               <li class="drop-down"><a href="{{ route('members') }}">@lang('front.About us')</a>
@@ -96,11 +94,11 @@
                   <li><a href="{{ route('members') }}">@lang('front.Structure of the Board of Directors')</a></li>
                 </ul>
               </li>
-			  <li class="drop-down"><a href="">@lang('front.Policies and procedural guides')</a>
+			  <li class="drop-down"><a href="{{ route('policies') }}">@lang('front.Policies and procedural guides')</a>
                 <ul>
-                  <li><a href="#">@lang('front.Bylaw of the Board of Directors')</a></li>
-                  <li><a href="#">@lang('front.Bylaw for appointing the CEO')</a></li>
-                  <li><a href="#">@lang('front.Bylaw of administrative and financial affairs')</a></li>
+                  <li><a href="{{ route('policies') }}">@lang('front.Bylaw of the Board of Directors')</a></li>
+                  <li><a href="{{ route('policies') }}">@lang('front.Bylaw for appointing the CEO')</a></li>
+                  <li><a href="{{ route('policies') }}">@lang('front.Bylaw of administrative and financial affairs')</a></li>
                 </ul>
               </li>
 			  <li class="drop-down"><a href="{{ route('initiative') }}">@lang('front.Our initiative')</a>
@@ -113,15 +111,15 @@
             </ul>
           </nav><!-- .nav-menu -->
         </div>
-        <div class="col-xl-4">
-          <div style="display:flex;">
-          <div>
-            <img src="{{ asset('img/vision.svg') }}" alt="" style="width:90px;">
-          </div>
-        <div class="search-box">
-          <button class="search-btn"><span class="lnr lnr-magnifier"></span></button>
-          <input class="search-input" type="text" placeholder="@lang('front.Search')">
-        </div>
+        <div class="col-xl-4 col-md-3">
+          <div class="searchmobile" style="display:flex;">
+            <div>
+              <img src="{{ asset('img/vision.svg') }}" alt="">
+            </div>
+            <div class="search-box">
+              <button class="search-btn"><span class="lnr lnr-magnifier"></span></button>
+              <input class="search-input" type="text" placeholder="@lang('front.Search')">
+            </div>
           </div>
         </div>
         </div>
@@ -152,6 +150,7 @@
 <script src="{{ asset('js/gmap3.min.js') }}"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
 <script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('js/particles.js') }}"></script>
 @yield('js')
 </body>
 </html>

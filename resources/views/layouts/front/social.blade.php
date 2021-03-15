@@ -12,7 +12,7 @@
 
       <div class="mr-md-auto text-center text-md-left">
         <div class="credits">
-        <a href="#" class="btn-get-started scrollto">
+        <a href="{{ route('invest') }}" class="btn-get-started scrollto">
         <img src="{{ asset('img/coeur.svg') }}" alt="" style="width:30px;">
             @lang('front.Get Started')
         </a>

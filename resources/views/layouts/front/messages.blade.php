@@ -2,7 +2,7 @@
 
     <!-- ======= Hero Section ======= -->
     <section id="messagesabk" class="d-flex align-items-center">
-    <img class="imgmotifcirclee" src="{{ asset('img/main.svg') }}" alt="">
+    <img class="imgmotifcirclee topbottom" src="{{ asset('img/main.svg') }}" alt="">
     <div class="container vision-messages" data-aos="zoom-out" data-aos-delay="100">
           <div class="row">
             <div class="content" style="width:45rem">
