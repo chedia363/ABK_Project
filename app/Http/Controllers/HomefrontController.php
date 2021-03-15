@@ -26,4 +26,8 @@ class HomefrontController extends Controller
     {
         return view('layouts.front.Policies');
     }
+    public function Invest()
+    {
+        return view('layouts.front.invest');
+    }
 }

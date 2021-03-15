@@ -108,6 +108,7 @@ return [
 
     'Our programs' => 'برامجنا',
     'Get Started' => 'استثمر معنا',
+    'We shared the pay' => 'شاركنا الأجر',
     'messages' => 'رسالتنا',
     'messages' => 'رسالتنا',
     'Our partners' => 'شركائنا',
@@ -117,7 +118,7 @@ return [
     'Your window for advice from specialists We make sure that your advisor is honest' => 'نافذتك للحصول على مشورة من المختصين نحرص على أن يكون مستشارك أمين',
     'Our vision' => 'رؤيتنا',
     'To be the leading institution in the field of caring for young people and youth for our region and our kingdom in line with our Islamic values' => 'أن نكون المؤسسة الرائدة في مجال العناية و الاهتمام بالنشيء و الشباب لمنطقتنا، و مملكتنا بما يتلائم مع قيمنا الإسلامية',
-    'Association registered in the Ministry of Human Resources with the number (1345) dated 01/20/1442 AH' => 'جمعية مسجلة في وزارة الموارد البشرية برقم (1345) وتاريخ 20 / 01 / 1442ه',
+    'Association registered in the Ministry of Human Resources with the number (1345) dated 01/20/1442 AH' => 'جمعية مسجلة في وزارة الموارد البشرية برقم (1345) وتاريخ 20 / 01/ 1442ه',
    
     /////////////////  language abak
 

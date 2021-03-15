@@ -98,8 +98,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 180px;
-  margin-top: -15px;
+  max-height: 64px;
+  margin-top: -17px;
 }
 
 @media (max-width: 992px) {
@@ -311,10 +311,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
+  font-weight: 600;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #e03a3c;
+  color: #aa802d;
   text-decoration: none;
 }
 
@@ -332,6 +333,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav .drop-down > a {
   padding-right: 35px;
+  font-weight: 600;
 }
 
 .mobile-nav .drop-down ul {
@@ -380,6 +382,21 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+@media(max-width:1200px){
+  #hero {
+    width: 100%;
+    height: 100%;
+  }
+  #hero .imageabeqpub{
+    justify-content: center; align-items: center; margin: auto;
+    background:none !important;
+    padding: 0rem !important;
+    border-radius: 0px !important;
+  }
+}
+#hero .imageabeqpub{
+  justify-content: center; align-items: center; margin: auto; background: rgba(12 35 63 /40%); border-radius: 35px; padding: 1rem 0;
 }
 #hero video{
   width:100%;
@@ -497,11 +514,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-height: 500px) {
-  #hero {
-    height: 120vh;
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -1157,7 +1169,6 @@ section {
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  padding-right: 4rem;
 }
 
 .faq .faq-list a {
@@ -1233,7 +1244,7 @@ section {
 
 @media(max-width:700px){
   #faq .section-title h2{
-    font-size: 20px;
+    font-size: 19px;
   }
   .faq .faq-list a.collapsed {
     color: #0c233f;
@@ -1242,6 +1253,13 @@ section {
 .faq .faq-list a{
   padding-right: 0px;
   font-size: 15px;
+}
+#faq .section-title h2:before {
+  position: absolute;
+  right: 0%;
+  top: -9px;
+  height: 40px;
+  width: 7px;
 }
 }
 
@@ -2222,6 +2240,11 @@ section {
   padding-top: 5px;
   font-size: 13px;
 }
+@media(max-width:1200px){
+  #footer .credits {
+    padding-top: 20px;
+  }
+  }
 
 #footer .social-links a {
   font-size: 18px;
@@ -2271,7 +2294,7 @@ section {
  border-bottom-left-radius: 5px;
 }
 #hero p.titleabak{
-  font-size: 15px;
+  font-size: 19px;
   color: #fff;
   TEXT-ALIGN: center;
   font-family: 'ARBFONTS-GE_DINAR_TWO_LIGHT-1';
@@ -2326,8 +2349,9 @@ section {
   padding: 10px 30px;
   color: #fff;
   font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
-  font-size: 17px;
-  border-radius: 6px
+  font-size: 20px;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
 /* style button */
@@ -2466,6 +2490,8 @@ section {
 .footer-area {
   background: #0c233f;
   padding: 30px 0px;
+  bottom: 0;
+  width:100%;
 }
 .footer-area .content-footerabk h3, h4{
   color:#fff;
@@ -2664,6 +2690,7 @@ section {
 }
 #developabk .title1 {
   width: 100%;
+  font-size: 30px;
 }
 
   }
@@ -2701,6 +2728,10 @@ section {
   border-radius: 30px;
   padding: 3rem 0;
 }
+@media(max-width:768px){
+  .counts .plr-box {
+    margin-bottom: 35px;
+  }}
 
   /*--------------------------------------------------------------
 # Fields
@@ -2868,5 +2899,222 @@ section {
     #initiative .section-title h2 {
       font-size: 30px;
   }
+  .section-title {
+    padding: 0 2rem;
+  }
   
   }
+  .invest1{
+    background: transparent;
+    border: 10px solid #144098;
+    border-radius: 15px;
+    padding: 0.5rem 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    }
+    .invest1:after{
+      content: "";
+      bottom: 0;
+      background: url(../img/bank/img04.svg);
+      top: -11rem;
+      position: absolute;
+      left: 0;
+      justify-content: center;
+      right: 0;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 15%;
+      align-items: center;
+      margin: auto;
+      }
+      .invest2:after{
+        content: "";
+        bottom: 0;
+        background: url(../img/bank/img04.svg);
+        top: -8rem;
+        position: absolute;
+        left: 0;
+        justify-content: center;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 15%;
+        align-items: center;
+        margin: auto;
+        }
+        .invest3:after{
+          content: "";
+          bottom: 0;
+          background: url(../img/bank/img04.svg);
+          top: -8rem;
+          position: absolute;
+          left: 0;
+          justify-content: center;
+          right: 0;
+          background-repeat: no-repeat;
+          background-position: center center;
+          width: 15%;
+          align-items: center;
+          margin: auto;
+          }
+    .invest2{
+      background: transparent;
+      border: 10px solid #400500;
+      border-radius: 15px;
+      padding: 0.5rem 2rem;
+      margin-bottom: 1rem;
+      margin-top: 3rem;
+      }
+      .invest3{
+        background: transparent;
+        border: 10px solid #006a56;
+        border-radius: 15px;
+        padding: 0.5rem 2rem;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        }
+    
+    .invest1 .investnumero{
+      color: #3f51b5;
+      font-size: 30px;
+      float: left;
+      margin-top: 10px;
+    }
+    .invest2 .investnumero{
+      color: #400500;
+      font-size: 30px;
+      float: left;
+      margin-top: 10px;
+    }
+    .invest3 .investnumero{
+      color: #006a56;
+      font-size: 30px;
+      float: left;
+      margin-top: 10px;
+    }
+    .invest1 img{
+      width:30%;
+      }
+      .invest2 img{
+        width:30%;
+        }
+        .invest3 img{
+          width:30%;
+          }
+          .paddingrow{
+            padding-top: 3rem;
+              }
+      
+      @media(max-width:1200px){
+        .invest1:after{
+         display: none;
+        }
+        .invest2:after{
+          display: none;
+        }
+     
+        .invest3:after{
+        display: none;
+        }
+        .invest1 .investnumero {
+          text-align: center;
+      }
+      .invest2, .invest3 {
+        padding-top: 0rem;
+      }
+      .invest2 .investnumero {
+        text-align: center;
+    }
+    .invest3 .investnumero {
+      text-align: center;
+  }
+      .invest1:after {
+        top: -18rem;
+      }
+      .invest2:after {
+        top: -15rem;
+      }
+      .invest3:after {
+        top: -15rem;
+      }
+      .invest2 img{
+        width:100%;
+        }
+        .invest3 img{
+          width:100%;
+          }
+      .invest1 img{
+        width:100%;
+        }
+        .paddingrow{
+          padding-top: 0rem;
+            }
+        #faq .section-title h2 {
+          font-size: 30px;
+        }
+        .invest1 .investnumero {
+          font-size: 27px;
+      }
+      .invest2 .investnumero {
+        font-size: 24px;
+      }
+      .invest3 .investnumero {
+        font-size: 24px;
+      }
+      }
+
+      @media(max-width:600px){
+        .search-box{
+          display: none;
+        }
+        #header .logo img {
+          margin-top: -17px;
+          width: 125px;
+          margin-right: 25px;
+      }
+      .searchmobile img {
+        width: 70px !important;
+      }
+ 
+   
+        }
+        .searchmobile img{
+          width:90px;
+        }
+
+         /*   animation image */
+img.topbottom{
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+img.topbottom {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+ /*   animation image */
+
+ @media (max-width: 280px){
+.searchmobile img {
+ display: none;
+}
+}
+
+@media (min-width: 768px) and (max-width:1200px){
+.invest1 .investnumero {
+    font-size: 45px;
+}
+.invest2 .investnumero {
+  font-size: 45px;
+}
+.invest3 .investnumero {
+  font-size: 45px;
+}
+}

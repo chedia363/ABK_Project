@@ -110,6 +110,7 @@
   } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
+  
 
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
@@ -257,5 +258,4 @@
         }
         google.maps.event.addDomListener(window, 'load', initialize);
 
-
-        
+  

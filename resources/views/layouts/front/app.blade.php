@@ -75,8 +75,8 @@
   <header id="header" class="fixed-top">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xl-12 d-flex align-items-center">
-        <div class="col-xl-3">
+        <div class="col-xl-12 col-md-12 d-flex align-items-center">
+        <div class="col-xl-3 col-md-3">
         <h1 class="logo mr-auto">
 			  <a href="{{ route('Abakhome') }}">
 			  <img src="{{ asset('img/logo.svg') }}" alt="">
@@ -84,7 +84,7 @@
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
         </div>
-        <div class="col-xl-5">
+        <div class="col-xl-5 col-md-6">
         <nav class="nav-menu d-none d-lg-block">
             <ul>
               <li class="drop-down"><a href="{{ route('members') }}">@lang('front.About us')</a>
@@ -111,15 +111,15 @@
             </ul>
           </nav><!-- .nav-menu -->
         </div>
-        <div class="col-xl-4">
-          <div style="display:flex;">
-          <div>
-            <img src="{{ asset('img/vision.svg') }}" alt="" style="width:90px;">
-          </div>
-        <div class="search-box">
-          <button class="search-btn"><span class="lnr lnr-magnifier"></span></button>
-          <input class="search-input" type="text" placeholder="@lang('front.Search')">
-        </div>
+        <div class="col-xl-4 col-md-3">
+          <div class="searchmobile" style="display:flex;">
+            <div>
+              <img src="{{ asset('img/vision.svg') }}" alt="">
+            </div>
+            <div class="search-box">
+              <button class="search-btn"><span class="lnr lnr-magnifier"></span></button>
+              <input class="search-input" type="text" placeholder="@lang('front.Search')">
+            </div>
           </div>
         </div>
         </div>
@@ -150,6 +150,7 @@
 <script src="{{ asset('js/gmap3.min.js') }}"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
 <script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('js/particles.js') }}"></script>
 @yield('js')
 </body>
 </html>

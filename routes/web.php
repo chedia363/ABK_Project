@@ -50,3 +50,4 @@ Route::resource('activities','AdminActivitiesController')->middleware('auth');
 Route::get('/initiative', 'HomefrontController@initiative')->name('initiative');
 Route::get('/members', 'HomefrontController@members')->name('members');
 Route::get('/policies', 'HomefrontController@politics')->name('policies');
+Route::get('/invest', 'HomefrontController@Invest')->name('invest');
