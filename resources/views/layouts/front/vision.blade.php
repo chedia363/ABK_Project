@@ -1,7 +1,6 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="vision" class="d-flex align-items-center">
-  <div id="praticle-js"></div>
   <img class="imgmotifcircle" src="{{ asset('img/motifcircle.svg') }}" alt="">
     <div class="container vision-messages" data-aos="zoom-out" data-aos-delay="100">
           <div class="row">
