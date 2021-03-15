@@ -13,7 +13,7 @@
             <a data-toggle="collapse" class="collapsed" href="#faq1">@lang('front.A regulation for appointing the board of directors')<span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
             <div id="faq1" class="collapse" data-parent=".faq-list">
                 <div class='embed-responsive' style='padding-bottom:150%' oncontextmenu="return false">
-                    <iframe src='../img/6.pdf#toolbar=0' type='application/pdf' width='100%' height='100%' style="pointer-events:none;"></iframe>
+                    <iframe src='{{ asset('img/6.pdf') }}#toolbar=0' type='application/pdf' width='100%' height='100%' style="pointer-events:none;"></iframe>
                 </div>
             </div>
           </li>
@@ -22,7 +22,7 @@
             <a data-toggle="collapse" href="#faq2" class="collapsed">@lang('front.Executive Director Appointment Regulations') <span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
             <div id="faq2" class="collapse" data-parent=".faq-list">
             <div class='embed-responsive' style='padding-bottom:150%' oncontextmenu="return false">
-                    <iframe src='../img/6.pdf#toolbar=0' type='application/pdf' width='100%' height='100%' style="pointer-events:none;"></iframe>
+                    <iframe src='{{ asset('img/6.pdf') }}#toolbar=0' type="application/pdf" width="100%" height="100%" style="pointer-events:none;"></iframe>
                 </div>
             </div>
           </li>
@@ -31,7 +31,7 @@
             <a data-toggle="collapse" href="#faq3" class="collapsed">@lang('front.List of Chartered Accountant nomenclature') <span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
             <div id="faq3" class="collapse" data-parent=".faq-list">
             <div class='embed-responsive' style='padding-bottom:150%' oncontextmenu="return false">
-                    <iframe src='../img/6.pdf#toolbar=0' type='application/pdf' width='100%' height='100%' style="pointer-events:none;"></iframe>
+                    <iframe src='{{ asset('img/6.pdf') }}#toolbar=0' type='application/pdf' width='100%' height='100%' style="pointer-events:none;"></iframe>
                 </div>
             </div>
           </li>
@@ -39,7 +39,7 @@
             <a data-toggle="collapse" href="#faq4" class="collapsed">@lang('front.Regulations for the election of the General Assembly')<span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
             <div id="faq4" class="collapse" data-parent=".faq-list">
             <div class='embed-responsive' style='padding-bottom:150%' oncontextmenu="return false">
-                    <iframe src='../img/6.pdf#toolbar=0' type='application/pdf' width='100%' height='100%' style="pointer-events:none;"></iframe>
+                    <iframe src='{{ asset('img/6.pdf') }}#toolbar=0' type='application/pdf' width='100%' height='100%' style="pointer-events:none;"></iframe>
                 </div>
             </div>
           </li>
@@ -47,7 +47,7 @@
             <a data-toggle="collapse" href="#faq5" class="collapsed">@lang('front.Committee call list') <span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
             <div id="faq5" class="collapse" data-parent=".faq-list">
             <div class='embed-responsive' style='padding-bottom:150%' oncontextmenu="return false">
-                    <iframe src='../img/6.pdf#toolbar=0' type='application/pdf' width='100%' height='100%' style="pointer-events:none;"></iframe>
+                    <iframe src='{{ asset('img/6.pdf') }}#toolbar=0' type='application/pdf' width='100%' height='100%' style="pointer-events:none;"></iframe>
                 </div>
             </div>
           </li>
