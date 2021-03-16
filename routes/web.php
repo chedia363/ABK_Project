@@ -48,8 +48,12 @@ Route::resource('activities','AdminActivitiesController')->middleware('auth');
 /**Policies control panel */
 Route::resource('policiesprcdural','AdminPoliciesprcduralmanualsController')->middleware('auth');
 Route::get('remove-image-policies', 'AdminPoliciesprcduralmanualsController@removeImage')->name('remove.imagepolicies');
+/**update My_profile */
+Route::get('admin/{id}/profile', 'ProfileController@index')->name('admin.profile');
+Route::put('admin/{id}/profile', 'ProfileController@update')->name('admin.profile.update');
 
 Route::get('/initiative', 'HomefrontController@initiative')->name('initiative');
 Route::get('/members', 'HomefrontController@members')->name('members');
 Route::get('/policies', 'HomefrontController@politics')->name('policies');
 Route::get('/invest', 'HomefrontController@Invest')->name('invest');
+
