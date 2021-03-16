@@ -163,8 +163,9 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  font-family: 'ARBFONTS-GE_DINAR_TWO_LIGHT-1';
+  font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
   color: #aa802d;
+  font-weight: bold;
   transition: 0.3s;
   font-size: 17px;
   text-align: center;
@@ -554,7 +555,7 @@ section{
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -1257,7 +1258,7 @@ section{
   display: none;
 }
 #faq .section-title h2{
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 1rem;
   position: relative;
   font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
@@ -2497,7 +2498,7 @@ color:#fff;
 
 /* section initiative  */
 #initiative .section-title h2{
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 1rem;
   position: relative;
   font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
@@ -2541,7 +2542,7 @@ color:#fff;
 
 #initiative .icon-box p{
   font-size: 20px;
-  font-family: GE Dinar Two;
+  font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
   float: right;
   direction: rtl;
 }
@@ -2551,7 +2552,7 @@ color:#fff;
 
 /* section fields  */
 #fields .section-title h2{
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 1rem;
   position: relative;
   font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
@@ -2582,7 +2583,7 @@ color:#fff;
   font-size: 32px;
   background: #fff;
   padding: 5px 15px;
-  font-family: GE Dinar Two;
+  font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   float: right;
@@ -2592,7 +2593,7 @@ color:#fff;
 
 #fields .icon-box p{
   font-size: 20px;
-  font-family: GE Dinar Two;
+  font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
   float: right;
   direction: rtl;
 }

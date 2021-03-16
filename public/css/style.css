@@ -532,7 +532,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -1220,7 +1220,7 @@ section {
   display: none;
 }
 #faq .section-title h2{
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 1rem;
   position: relative;
   font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
@@ -2548,7 +2548,7 @@ section {
 
 /* section initiative  */
 #initiative .section-title h2{
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 1rem;
   position: relative;
   font-family: 'GE dinar two';
@@ -2598,7 +2598,7 @@ section {
 
 /* section fields  */
 #fields .section-title h2{
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 1rem;
   position: relative;
   font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
