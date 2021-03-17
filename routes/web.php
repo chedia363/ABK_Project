@@ -48,6 +48,9 @@ Route::resource('activities','AdminActivitiesController')->middleware('auth');
 /**Policies control panel */
 Route::resource('policiesprcdural','AdminPoliciesprcduralmanualsController')->middleware('auth');
 Route::get('remove-image-policies', 'AdminPoliciesprcduralmanualsController@removeImage')->name('remove.imagepolicies');
+/**AboutUs control panel */
+Route::resource('teams','AdminTeamsController')->middleware('auth');
+
 /**update My_profile */
 Route::get('admin/{id}/profile', 'ProfileController@index')->name('admin.profile');
 Route::put('admin/{id}/profile', 'ProfileController@update')->name('admin.profile.update');
