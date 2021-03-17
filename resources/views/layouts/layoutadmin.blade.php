@@ -166,6 +166,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           @lang('front.Policies and procedural guides')
                         </a>
                       </li> 
+                      <li class="nav-item @if(request()->segment(1) == 'teams') active @endif">
+                        <a href="{{ route('teams.index') }}" class="nav-link active">
+                          <i class="far fa-circle nav-icon"></i>
+                          @lang('front.Board of Directors')
+                        </a>
+                      </li> 
 
                   </ul>
                </li>
