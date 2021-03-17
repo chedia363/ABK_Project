@@ -108,6 +108,7 @@ return [
 
     'Our programs' => 'برامجنا',
     'Get Started' => 'استثمر معنا',
+    'Invest with us' => 'استثمر معنا',    
     'We shared the pay' => 'شاركنا الأجر',
     'messages' => 'رسالتنا',
     'messages' => 'رسالتنا',
