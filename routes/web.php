@@ -43,8 +43,20 @@ Route::get('remove-image-program', 'AdminProgramsController@removeImage')->name(
 Route::resource('aboutus','AdminAboutusController')->middleware('auth');
 /**ContactUs control panel */
 Route::resource('contactus','AdminContactusController')->middleware('auth');
+/**Activities control panel */
+Route::resource('activities','AdminActivitiesController')->middleware('auth');
+/**Policies control panel */
+Route::resource('policiesprcdural','AdminPoliciesprcduralmanualsController')->middleware('auth');
+Route::get('remove-image-policies', 'AdminPoliciesprcduralmanualsController@removeImage')->name('remove.imagepolicies');
+/**AboutUs control panel */
+Route::resource('teams','AdminTeamsController')->middleware('auth');
+
+/**update My_profile */
+Route::get('admin/{id}/profile', 'ProfileController@index')->name('admin.profile');
+Route::put('admin/{id}/profile', 'ProfileController@update')->name('admin.profile.update');
 
 Route::get('/initiative', 'HomefrontController@initiative')->name('initiative');
 Route::get('/members', 'HomefrontController@members')->name('members');
 Route::get('/policies', 'HomefrontController@politics')->name('policies');
 Route::get('/invest', 'HomefrontController@Invest')->name('invest');
+

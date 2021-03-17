@@ -46,7 +46,7 @@ class AdminContactusController extends Controller
        
        
         return redirect()->route('contactus.index')
-                            ->with('success',__('front.contactus created successfully.'));
+                            ->with('success',__('front.created successfully.'));
     }
 
     /**
@@ -90,7 +90,7 @@ class AdminContactusController extends Controller
        $contactus->update($request->all());
 
         return redirect()->route('contactus.index')
-                        ->with('success',__('front.contactus updated successfully'));
+                        ->with('success',__('front.updated successfully'));
     }
 
     /**
@@ -107,6 +107,6 @@ class AdminContactusController extends Controller
         $contactus->delete();
   
         return redirect()->route('contactus.index')
-                        ->with('success',__('front.contactus deleted successfully'));
+                        ->with('success',__('front.deleted successfully'));
     }
 }

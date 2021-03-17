@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Aboutus;
+use App\Activities;
 use Illuminate\Http\Request;
 
-class AdminAboutusController extends Controller
+class AdminActivitiesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,9 @@ class AdminAboutusController extends Controller
      */
     public function index()
     {
-        $aboutuss = Aboutus::latest()->paginate(10);
+        $activities = Activities::latest()->paginate(10);
   
-        return view('aboutus.index',compact('aboutuss'))
+        return view('activities.index',compact('activities'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -27,7 +27,7 @@ class AdminAboutusController extends Controller
      */
     public function create()
     {
-        return view('aboutus.create');
+        return view('activities.create');
     }
 
     /**
@@ -36,76 +36,77 @@ class AdminAboutusController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Aboutus $aboutus)
+    public function store(Request $request, Activities $activities)
     {
         
        
-        $aboutus->create($request->all());
+        $activities->create($request->all());
     
     
            
        
-        return redirect()->route('aboutus.index')
+        return redirect()->route('activities.index')
                             ->with('success',__('front.created successfully.'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Aboutus  $aboutus
+     * @param  \App\Activities  $activities
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        $aboutus = Aboutus::where('id', $id)->first();
+        $activities = Activities::where('id', $id)->first();
 
-        return view('aboutus.show',compact('aboutus'));
+        return view('activities.show',compact('activities'));
     }
+
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Aboutus  $aboutus
+     * @param  \App\Activities  $activities
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $aboutus = Aboutus::where('id', $id)->first();
+        $activities = Activities::where('id', $id)->first();
         
-        return view('aboutus.edit',compact('aboutus'));
+        return view('activities.edit',compact('activities'));
     }
+
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Aboutus  $aboutus
+     * @param  \App\Activities  $activities
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
        
-       $aboutus = Aboutus::find($id);
+       $activities = Activities::find($id);
       
-       $aboutus->update($request->all());
+       $activities->update($request->all());
 
-        return redirect()->route('aboutus.index')
+        return redirect()->route('activities.index')
                         ->with('success',__('front.updated successfully'));
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Aboutus  $aboutus
+     * @param  \App\Activities  $activities
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
                 
-        $aboutus = Aboutus::where('id', $id)->first();
+        $activities = Activities::where('id', $id)->first();
 
-        $aboutus->delete();
+        $activities->delete();
   
-        return redirect()->route('aboutus.index')
+        return redirect()->route('activities.index')
                         ->with('success',__('front.deleted successfully'));
     }
-
 }
