@@ -67,6 +67,7 @@
     </div>
                 <canvas id="pdf-render"></canvas>                </div>
             </div>
+            </div>
           </li>
 
           <li>
