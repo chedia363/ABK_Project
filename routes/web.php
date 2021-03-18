@@ -62,5 +62,6 @@ Route::get('/policies2', 'HomefrontController@politics2')->name('policies2');
 Route::get('/policies3', 'HomefrontController@politics3')->name('policies3');
 Route::get('/policies4', 'HomefrontController@politics4')->name('policies4');
 Route::get('/policies5', 'HomefrontController@politics5')->name('policies5');
+Route::get('/policies6', 'HomefrontController@politics6')->name('policies6');
 Route::get('/invest', 'HomefrontController@Invest')->name('invest');
 

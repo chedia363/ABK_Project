@@ -1191,6 +1191,25 @@ section{
 .faq .faq-list {
   padding: 0;
   list-style: none;
+  padding: 0rem 4rem;
+}
+@media(max-width:576px){
+  .faq .faq-list {
+    padding: 0rem 0rem;
+  }
+  .faq .faq-list button.btn{
+   padding:0 !important;
+  }
+  .faq .faq-list .page-info{
+   font-size: 15px !important;
+  }
+  }
+
+.faq .faq-list button.btn{
+  font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
+}
+.faq .faq-list .page-info{
+  font-family: 'ArbFONTS-GE_Dinar_Two_Light-1';
 }
 
 
@@ -1204,11 +1223,12 @@ section{
   display: block;
   position: relative;
   color: #0c233f;
-  font-size: 23px;
+  font-size: 20px;
   font-family: 'ArbFONTS-GE-Dinar-One-Medium';
   font-weight: bold;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: bold;
+  text-decoration: none;
   padding-right: 25px;
 }
 
@@ -1224,9 +1244,6 @@ section{
   padding: 10px 0 0 0;
 }
 
-.faq .faq-list .icon-show {
-  display: none;
-}
 .faq .faq-list .icon-show {
   color: #aa802d;
   font-weight: bold;
@@ -1285,7 +1302,7 @@ section{
 #faq .section-title h2:before{
   position: absolute;
   right: 0%;
-  top: -7px;
+  top: -10px;
   height: 50px;
   width: 7px;
   margin-right: -30px;
