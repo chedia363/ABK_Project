@@ -33,12 +33,7 @@
                 <input type="text" name="name" class="form-control" placeholder="Name" required>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>description:</strong>
-                <textarea class="form-control" style="height:150px" name="description" placeholder="Detail" required></textarea>
-            </div>
-        </div>
+
         <div class="form-group">
             <label for="cover">@lang('admin.Cover') </label>
             <input type="file" name="cover" id="cover" class="form-control" required>

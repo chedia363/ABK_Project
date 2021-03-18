@@ -23,7 +23,7 @@
             <th>No</th>
             <th>Name</th>
             <th>Field Picture</th>
-            <th>Description</th>
+            
             <th width="280px">Action</th>
         </tr>
         @foreach ($fields as $field)
@@ -35,7 +35,7 @@
                     <img src="{{ asset("storage/$field->cover") }}" alt="" class="img-fluid" style="width: 30%;">
                 @endif
             </td>
-            <td>{{ $field->description }}</td>
+           
             <td>
                 <form action="{{ route('fields.destroy',$field->id) }}" method="POST">
    

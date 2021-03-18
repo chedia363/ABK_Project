@@ -15,7 +15,15 @@ class HomefrontController extends Controller
     }
     public function initiative()
     {
-        return view('layouts.front.initiative');
+        $activities = DB::table('activities')->limit(4)->get();
+        $fields = DB::table('fields')->limit(5)->get();
+        $fieldsScnd = DB::table('fields')->skip(5)->take(5)->get();
+        return view('layouts.front.initiative', compact(
+           'activities',
+           'fields',
+           'fieldsScnd'
+
+        ));
     }
     public function members()
     {

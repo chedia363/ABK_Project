@@ -7,8 +7,8 @@
 @endsection
 
 @section('content')
-@include('layouts.front.activity')
-@include('layouts.front.field')
+@include('layouts.front.activity', ['activities' => $activities])
+@include('layouts.front.field', ['fields' => $fields, 'fieldsScnd' => $fieldsScnd])
 @include('layouts.front.programs')
 @include('layouts.front.social')
 @endsection
