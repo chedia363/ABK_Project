@@ -9,11 +9,12 @@
                     </div>
                 </div>
             </div>
+          
             <div class="row">
                 <div class="col-md-4 mx-auto">
                     <div class="timeline1" style="box-shadow: 0px 6px 0px 0px #0190c1;">
-                        <h3>@lang('front.Chairman of Board of Directors')</h3>
-                        <p>@lang('front.Abdullah bin Maail Al-Qahtani')</p>
+                        <h3>{{$teamsfrst->description}}</h3>
+                        <p>{{$teamsfrst->name}}</p>
                     </div>
                 </div>
             </div>
@@ -27,28 +28,28 @@
             <div class="row" style="padding-top:1rem">
                 <div class="col-md-4 mx-auto">
                     <div class="timeline1 imgtime2" style="box-shadow: 0px 6px 0px 0px #24d195;">
-                        <h3>@lang('front.Vice Chairman of the Board of Directors')</h3>
-                        <p>@lang('front.Saad bin Abdullah Al-Qarni')</p>
+                        <h3>{{$teamssecnd->description}}</h3>
+                        <p>{{$teamssecnd->name}}</p>
                     </div>
                 </div>
                 <div class="col-md-4 mx-auto">
                     <div class="timeline1" style="box-shadow: 0px 6px 0px 0px #ff8517;">
-                        <h3>@lang('front.Financial supervisor')</h3>
-                        <p>@lang('front.Mohammed bin Abdullah Al-Dossary')</p>
+                       <h3>{{$teamsthrd->description}}</h3>
+                        <p>{{$teamsthrd->name}}</p>
                     </div>
                 </div>
             </div>
             <div class="row" style="padding-top:1rem">
                 <div class="col-md-4 mx-auto">
                     <div class="timeline1 imgtime3" style="box-shadow: 0px 6px 0px 0px #00cbe1;">
-                        <h3>@lang('front.Member of the Board of Directors')</h3>
-                        <p>@lang('front.Abdulrahman bin Nasser Al-Maawi')</p>
+                        <h3>{{$teamsfrth->description}}</h3>
+                        <p>{{$teamsfrth->name}}</p>
                     </div>
                 </div>
                 <div class="col-md-4 mx-auto">
                     <div class="timeline1" style="box-shadow: 0px 6px 0px 0px #f5b91c;">
-                        <h3>@lang('front.Member of the Board of Directors')</h3>
-                        <p>@lang('front.Hamid bin Saad Al-Ghamdi')</p>
+                        <h3>{{$teamsfve->description}}</h3>
+                        <p>{{$teamsfve->name}}</p>
                     </div>
                 </div>
             </div>

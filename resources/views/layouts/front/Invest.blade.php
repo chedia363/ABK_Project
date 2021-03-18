@@ -7,6 +7,6 @@
 @endsection
 
 @section('content')
-@include('layouts.front.investcontent')
+@include('layouts.front.investcontent', ['investus' => $investus])
 @include('layouts.front.social')
 @endsection

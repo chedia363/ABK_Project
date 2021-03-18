@@ -7,6 +7,6 @@
 @endsection
 
 @section('content')
-@include('layouts.front.PDF')
+@include('layouts.front.all_policy')
 @include('layouts.front.social')
 @endsection

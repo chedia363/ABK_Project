@@ -108,6 +108,7 @@ return [
 
     'Our programs' => 'برامجنا',
     'Get Started' => 'استثمر معنا',
+    'Invest with us' => 'استثمر معنا',    
     'We shared the pay' => 'شاركنا الأجر',
     'messages' => 'رسالتنا',
     'messages' => 'رسالتنا',
@@ -171,6 +172,11 @@ return [
     'Regulations for the election of the General Assembly' => 'لائحة انتخاب الجمعية العمومية',
 
     'Committee call list' => 'لائحة دعوة اللجنة',
+
+    'Next Page' => 'الصفحة التالية',
+    'Prev Page' => 'الصفحة السابقة',
+    'Page' => 'الصفحة',
+    'of' => 'إلى',
    
     
 

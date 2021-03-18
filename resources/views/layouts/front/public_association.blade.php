@@ -9,29 +9,16 @@
                     </div>
                 </div>
             </div>
+            @foreach ($teams as $teams)
             <div class="row">
                 <div class="col-md-6 mx-auto">
                     <div class="doctor1">
-                        <h3>@lang('front.Prof. Dr. Abdullah bin Maail Al-Qahtani')</h3>
-                        <p>@lang('front.President of the General Assembly, Academic University of Bisha')</p>
+                        <h3>{{$teams->name}}</h3>
+                        <p>{{$teams->description}}</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <div class="doctor1">
-                        <h3>@lang('front.Prof. Dr. Abdullah bin Maail Al-Qahtani')</h3>
-                        <p>@lang('front.President of the General Assembly, Academic University of Bisha')</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <div class="doctor1">
-                        <h3>@lang('front.Prof. Dr. Abdullah bin Maail Al-Qahtani')</h3>
-                        <p>@lang('front.President of the General Assembly, Academic University of Bisha')</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
+           
         </div>
     </section>

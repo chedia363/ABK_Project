@@ -169,43 +169,36 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <i class="far fa-circle nav-icon"></i>
                           @lang('front.Board of Directors')
                         </a>
-                      </li>                                         
+                      </li>   
+                      <li class="nav-item @if(request()->segment(1) == 'vision') active @endif">
+                        <a href="{{ route('vision.index') }}" class="nav-link active">
+                          <i class="far fa-circle nav-icon"></i>
+                          @lang('front.Our vision')
+                        </a>
+                      </li> 
+                      <li class="nav-item @if(request()->segment(1) == 'messages') active @endif">
+                        <a href="{{ route('messages.index') }}" class="nav-link active">
+                          <i class="far fa-circle nav-icon"></i>
+                          @lang('front.Our Message')
+                        </a>
+                      </li>                       
+                      <li class="nav-item @if(request()->segment(1) == 'invests') active @endif">
+                        <a href="{{ route('invests.index') }}" class="nav-link active">
+                          <i class="far fa-circle nav-icon"></i>
+                          @lang('front.Invest with us')
+                        </a>
+                      </li>
+                      <li class="nav-item @if(request()->segment(1) == 'partners') active @endif">
+                        <a href="{{ route('partners.index') }}" class="nav-link active">
+                          <i class="far fa-circle nav-icon"></i>
+                          @lang('front.Our partners')
+                        </a>
+                      </li>                      
+                                                                                     
                   </ul>
                </li>
 
 
-               {{--  <li class="nav-item has-treeview menu-open"> 
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Starter Pages
-                <i class="icongift right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Simple Link
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li> --}}
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

@@ -50,6 +50,17 @@ Route::resource('policiesprcdural','AdminPoliciesprcduralmanualsController')->mi
 Route::get('remove-image-policies', 'AdminPoliciesprcduralmanualsController@removeImage')->name('remove.imagepolicies');
 /**AboutUs control panel */
 Route::resource('teams','AdminTeamsController')->middleware('auth');
+/**vision control panel */
+Route::resource('vision','AdminVisionController')->middleware('auth');
+/**messages control panel */
+Route::resource('messages','AdminMessagesController')->middleware('auth');
+/**invest control panel */
+Route::resource('invests','AdminInvestsController')->middleware('auth');
+Route::get('remove-image-invests', 'AdminInvestsController@removeImage')->name('remove.imageinvests');
+/**partners control panel */
+Route::resource('partners','AdminPartnersController')->middleware('auth');
+Route::get('remove-image-partners', 'AdminPartnersController@removeImage')->name('remove.imagepartners');
+
 
 /**update My_profile */
 Route::get('admin/{id}/profile', 'ProfileController@index')->name('admin.profile');
@@ -58,5 +69,10 @@ Route::put('admin/{id}/profile', 'ProfileController@update')->name('admin.profil
 Route::get('/initiative', 'HomefrontController@initiative')->name('initiative');
 Route::get('/members', 'HomefrontController@members')->name('members');
 Route::get('/policies', 'HomefrontController@politics')->name('policies');
+Route::get('/policies2', 'HomefrontController@politics2')->name('policies2');
+Route::get('/policies3', 'HomefrontController@politics3')->name('policies3');
+Route::get('/policies4', 'HomefrontController@politics4')->name('policies4');
+Route::get('/policies5', 'HomefrontController@politics5')->name('policies5');
+Route::get('/policies6', 'HomefrontController@politics6')->name('policies6');
 Route::get('/invest', 'HomefrontController@Invest')->name('invest');
 

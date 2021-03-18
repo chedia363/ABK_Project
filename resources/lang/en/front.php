@@ -8,6 +8,7 @@ return [
     'Our initiative'                   => 'Our initiative',  
     'Our vision'                   => 'Our vision',                     
     'Our Message'                   => 'Our Message',      
+    'Invest with us' => 'Invest with us',  
     'created successfully.'                   => 'created successfully',
     'updated successfully'                   => 'updated successfully',      
     'deleted successfully'                   => 'deleted successfully',           
@@ -110,5 +111,9 @@ return [
     'Regulations for the election of the General Assembly' => 'Regulations for the election of the General Assembly',
 
     'Committee call list' => 'Committee call list',
+    'Next Page' => 'Next Page',
+    'Prev Page' => 'Prev Page',
+    'Page' => 'Page',
+    'of' => 'of',
     
 ];
