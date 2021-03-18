@@ -169,6 +169,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 18px;
   text-align: center;
+  text-decoration: none;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -1240,7 +1241,7 @@ section{
 
 .faq .faq-list a.collapsed {
   color: #0c233f;
-  font-size: 23px;
+  font-size: 20px;
   font-family: 'ArbFONTS-GE-Dinar-One-Medium';
   font-weight: bold;
 }
@@ -1258,7 +1259,7 @@ section{
   display: none;
 }
 #faq .section-title h2{
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 1rem;
   position: relative;
   font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
@@ -2544,6 +2545,7 @@ color:#fff;
   font-size: 20px;
   font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
   float: right;
+  font-weight: bold;
   direction: rtl;
 }
 
@@ -3027,7 +3029,7 @@ text-align: center;
   top: -15rem;
 }
 #faq .section-title h2 {
-  font-size: 30px;
+  font-size: 25px;
 }
 .invest1 .investnumero {
   font-size: 24px;
@@ -3095,6 +3097,9 @@ img.topbottom {
       font-size: 45px;
     }
   }
+
+
+
 
   
   

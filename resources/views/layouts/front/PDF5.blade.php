@@ -1,4 +1,4 @@
-  <link
+<link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -47,7 +47,7 @@
         </div>
         <ul class="faq-list" data-aos="fade-up">
           <li>
-              <a data-toggle="collapse" class="collapsed" href="#faq1">@lang('front.A regulation for appointing the board of directors')<span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
+              <a data-toggle="collapse" class="collapsed" href="#faq1">@lang('front.Committee call list')<span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
                   <div id="faq1" class="collapse" data-parent=".faq-list">
                     <div class='embed-responsive' style='padding-bottom:150%' >
                       <div class="top-bar">
@@ -72,7 +72,7 @@
 
     <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
     <script>
-    const url = '../img/6.pdf';
+    const url = '../img/10.pdf';
 
 let pdfDoc = null,
   pageNum = 1,

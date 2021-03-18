@@ -69,5 +69,9 @@ Route::put('admin/{id}/profile', 'ProfileController@update')->name('admin.profil
 Route::get('/initiative', 'HomefrontController@initiative')->name('initiative');
 Route::get('/members', 'HomefrontController@members')->name('members');
 Route::get('/policies', 'HomefrontController@politics')->name('policies');
+Route::get('/policies2', 'HomefrontController@politics2')->name('policies2');
+Route::get('/policies3', 'HomefrontController@politics3')->name('policies3');
+Route::get('/policies4', 'HomefrontController@politics4')->name('policies4');
+Route::get('/policies5', 'HomefrontController@politics5')->name('policies5');
 Route::get('/invest', 'HomefrontController@Invest')->name('invest');
 
