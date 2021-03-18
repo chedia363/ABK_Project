@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Aboutus;
+use App\Policiesprcduralmanuals;
 
 
 class HomefrontController extends Controller
@@ -22,10 +23,29 @@ class HomefrontController extends Controller
         
         return view('layouts.front.members', compact('aboutuss'));
     }
+
     public function politics()
     {
         return view('layouts.front.Policies');
     }
+    public function politics2()
+    {
+        return view('layouts.front.Policies2');
+    }
+    public function politics3()
+    {
+        return view('layouts.front.Policies3');
+    }
+    public function politics4()
+    {
+        return view('layouts.front.Policies4');
+    }
+    public function politics5()
+    {
+        return view('layouts.front.Policies5');
+    }
+
+
     public function Invest()
     {
         return view('layouts.front.invest');

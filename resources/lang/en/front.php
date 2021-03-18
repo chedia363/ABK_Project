@@ -110,5 +110,9 @@ return [
     'Regulations for the election of the General Assembly' => 'Regulations for the election of the General Assembly',
 
     'Committee call list' => 'Committee call list',
+    'Next Page' => 'Next Page',
+    'Prev Page' => 'Prev Page',
+    'Page' => 'Page',
+    'of' => 'of',
     
 ];

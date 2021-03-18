@@ -97,8 +97,10 @@
 			  <li class="drop-down"><a href="{{ route('policies') }}">@lang('front.Policies and procedural guides')</a>
                 <ul>
                   <li><a href="{{ route('policies') }}">@lang('front.Bylaw of the Board of Directors')</a></li>
-                  <li><a href="{{ route('policies') }}">@lang('front.Bylaw for appointing the CEO')</a></li>
-                  <li><a href="{{ route('policies') }}">@lang('front.Bylaw of administrative and financial affairs')</a></li>
+                  <li><a href="{{ route('policies2') }}">@lang('front.Bylaw for appointing the CEO')</a></li>
+                  <li><a href="{{ route('policies3') }}">@lang('front.Bylaw of administrative and financial affairs')</a></li>
+                  <li><a href="{{ route('policies4') }}">@lang('front.Regulations for the election of the General Assembly')</a></li>
+                  <li><a href="{{ route('policies5') }}">@lang('front.Committee call list')</a></li>
                 </ul>
               </li>
 			  <li class="drop-down"><a href="{{ route('initiative') }}">@lang('front.Our initiative')</a>
