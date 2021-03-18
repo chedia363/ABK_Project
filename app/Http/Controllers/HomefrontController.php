@@ -62,6 +62,10 @@ class HomefrontController extends Controller
     {
         return view('layouts.front.Policies5');
     }
+    public function politics6()
+    {
+        return view('layouts.front.Policies6');
+    }
 
 
     public function Invest()

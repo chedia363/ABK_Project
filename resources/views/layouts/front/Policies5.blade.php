@@ -7,6 +7,6 @@
 @endsection
 
 @section('content')
-@include('layouts.front.PDF5')
+@include('layouts.front.PDF4')
 @include('layouts.front.social')
 @endsection

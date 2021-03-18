@@ -1,4 +1,4 @@
-  <link
+<link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -34,41 +34,29 @@
   color: #fff;
   padding: 1rem;
 }
-
 </style>
     <section id="faq" class="faq section-padding" style="margin-top:5rem; background:#e6e6e6;">
       <div class="container" data-aos="fade-up">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>@lang('front.Policies and procedural guides')</h2>
-                </div>
-            </div>
-        </div>
         <ul class="faq-list" data-aos="fade-up">
           <li>
-              <a data-toggle="collapse" class="collapsed" href="#faq1">@lang('front.A regulation for appointing the board of directors')<span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
-                  <div id="faq1" class="collapse" data-parent=".faq-list">
-                    <div class='embed-responsive' style='padding-bottom:150%' >
-                      <div class="top-bar">
-                          <button class="btn" id="prev-page">
-                          @lang('front.Prev Page')
-                          </button>
-                          <button class="btn" id="next-page">
-                          @lang('front.Next Page')
-                          </button>
-                          <span class="page-info">
-                          @lang('front.Page')<span id="page-num"></span> @lang('front.of')<span id="page-count"></span>
-                          </span>
-                      </div>
-                      <canvas id="pdf-render" style="width:100%;"></canvas>
-                    </div>
-                  </div>
+            <div class='embed-responsive' style='height:100%;' >
+              <div class="top-bar">
+                  <button class="btn" id="prev-page">
+                  @lang('front.Prev Page')
+                  </button>
+                  <button class="btn" id="next-page">
+                  @lang('front.Next Page')
+                  </button>
+                  <span class="page-info">
+                  @lang('front.Page')<span id="page-num"></span> @lang('front.of')<span id="page-count"></span>
+                  </span>
+              </div>
+              <canvas id="pdf-render" style="width:100%;"></canvas>
+            </div>
           </li>
         </ul>
       </div>
     </section>
-
 
     <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
     <script>
