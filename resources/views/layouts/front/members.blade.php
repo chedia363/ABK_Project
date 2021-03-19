@@ -7,8 +7,8 @@
 @endsection
 
 @section('content')
-@include('layouts.front.lines', ['aboutuss' => $aboutuss])
-@include('layouts.front.public_association')
-@include('layouts.front.timeline')
+@include('layouts.front.lines', ['aboutuss' => $aboutuss]) 
+@include('layouts.front.public_association', ['teams' => $teams])
+@include('layouts.front.timeline', ['teamsfrst' => $teamsfrst, 'teamssecnd' => $teamssecnd, 'teamsthrd' => $teamsthrd, 'teamsfrth' => $teamsfrth, 'teamsfve' => $teamsfve])
 @include('layouts.front.social')
 @endsection

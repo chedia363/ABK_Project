@@ -8,6 +8,7 @@ return [
     'Our initiative'                   => 'Our initiative',  
     'Our vision'                   => 'Our vision',                     
     'Our Message'                   => 'Our Message',      
+    'Invest with us' => 'Invest with us',  
     'created successfully.'                   => 'created successfully',
     'updated successfully'                   => 'updated successfully',      
     'deleted successfully'                   => 'deleted successfully',           

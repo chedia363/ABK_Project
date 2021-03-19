@@ -50,6 +50,17 @@ Route::resource('policiesprcdural','AdminPoliciesprcduralmanualsController')->mi
 Route::get('remove-image-policies', 'AdminPoliciesprcduralmanualsController@removeImage')->name('remove.imagepolicies');
 /**AboutUs control panel */
 Route::resource('teams','AdminTeamsController')->middleware('auth');
+/**vision control panel */
+Route::resource('vision','AdminVisionController')->middleware('auth');
+/**messages control panel */
+Route::resource('messages','AdminMessagesController')->middleware('auth');
+/**invest control panel */
+Route::resource('invests','AdminInvestsController')->middleware('auth');
+Route::get('remove-image-invests', 'AdminInvestsController@removeImage')->name('remove.imageinvests');
+/**partners control panel */
+Route::resource('partners','AdminPartnersController')->middleware('auth');
+Route::get('remove-image-partners', 'AdminPartnersController@removeImage')->name('remove.imagepartners');
+
 
 /**update My_profile */
 Route::get('admin/{id}/profile', 'ProfileController@index')->name('admin.profile');
