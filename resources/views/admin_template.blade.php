@@ -37,7 +37,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      
     </ul>
 
  
@@ -224,8 +223,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Starter Page</li>
+              <li class="breadcrumb-item"><a href="#">@lang('front.Home')</a></li>
+              <li class="breadcrumb-item active">@lang('front.Starter Page')</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->

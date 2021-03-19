@@ -176,6 +176,7 @@ return [
     'Prev Page' => 'الصفحة السابقة',
     'Page' => 'الصفحة',
     'of' => 'إلى',
+    'Starter Page' => 'إلى',
    
     
 
