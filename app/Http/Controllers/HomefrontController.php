@@ -6,22 +6,28 @@ use Illuminate\Http\Request;
 use App\Aboutus;
 use App\Policiesprcduralmanuals;
 use App\Teams;
+use App\Contactus;
 use DB;
 class HomefrontController extends Controller
 {
     public function Abakhome()
     {
-        return view('front.index');
+        $contactus = Contactus::first();
+        return view('front.index', compact('contactus'));
     }
     public function initiative()
     {
         $activities = DB::table('activities')->limit(4)->get();
         $fields = DB::table('fields')->limit(5)->get();
         $fieldsScnd = DB::table('fields')->skip(5)->take(5)->get();
+        $programs = DB::table('programs')->limit(4)->get();
+        $contactus = Contactus::first();
         return view('layouts.front.initiative', compact(
            'activities',
            'fields',
-           'fieldsScnd'
+           'fieldsScnd',
+           'programs',
+           'contactus'
 
         ));
     }
@@ -35,7 +41,7 @@ class HomefrontController extends Controller
         $teamsthrd =  DB::table('teams_a_b_k')->skip(2)->first();
         $teamsfrth =  DB::table('teams_a_b_k')->skip(3)->first();
         $teamsfve =  DB::table('teams_a_b_k')->skip(4)->first();        
-      
+      $contactus = Contactus::first();
 
 
         return view('layouts.front.members', 
@@ -46,33 +52,40 @@ class HomefrontController extends Controller
             'teamssecnd',
             'teamsthrd',
             'teamsfrth',
-            'teamsfve'
+            'teamsfve',
+            'contactus'
         ));
     }
 
     public function politics()
     {
-        return view('layouts.front.Policies');
+        $contactus = Contactus::first();
+        return view('layouts.front.Policies', compact('contactus'));
     }
     public function politics2()
     {
-        return view('layouts.front.Policies2');
+        $contactus = Contactus::first();
+        return view('layouts.front.Policies2', compact('contactus'));
     }
     public function politics3()
     {
-        return view('layouts.front.Policies3');
+        $contactus = Contactus::first();
+        return view('layouts.front.Policies3', compact('contactus'));
     }
     public function politics4()
     {
-        return view('layouts.front.Policies4');
+        $contactus = Contactus::first();
+        return view('layouts.front.Policies4', compact('contactus'));
     }
     public function politics5()
     {
-        return view('layouts.front.Policies5');
+        $contactus = Contactus::first();
+        return view('layouts.front.Policies5', compact('contactus'));
     }
     public function politics6()
     {
-        return view('layouts.front.Policies6');
+        $contactus = Contactus::first();
+        return view('layouts.front.Policies6', compact('contactus'));
     }
 
 
@@ -80,6 +93,7 @@ class HomefrontController extends Controller
     {
         // get invests records
         $investus = DB::table('investus_a_b_k')->limit(3)->get();
-        return view('layouts.front.invest', compact('investus'));
+         $contactus = Contactus::first();
+        return view('layouts.front.invest', compact('investus', 'contactus'));
     }
 }

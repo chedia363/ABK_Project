@@ -1,4 +1,4 @@
-@extends('layouts.front.app')
+@extends('layouts.front.app',['contactus' => $contactus])
 
 @section('og')
     <meta property="og:type" content="home"/>

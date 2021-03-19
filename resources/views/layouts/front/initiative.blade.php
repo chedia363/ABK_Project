@@ -9,6 +9,6 @@
 @section('content')
 @include('layouts.front.activity', ['activities' => $activities])
 @include('layouts.front.field', ['fields' => $fields, 'fieldsScnd' => $fieldsScnd])
-@include('layouts.front.programs')
+@include('layouts.front.programs', ['programs' => $programs])
 @include('layouts.front.social')
 @endsection

@@ -48,13 +48,25 @@ class AdminProgramsController extends Controller
         $image = $request->file('cover');
                
         $file_name = $image->getClientOriginalName();
-        $program->create(['name'=>$request->name,'description'=>$request->description,'cover'=>$imagesave, 'file_name'=>$file_name]);
-    
-    
+        $file_size = getimagesize($image);
+        $width = $file_size[0];
+        $height= $file_size[1];
+        
+        if($width > 800 && $height > 665){
+            return redirect()->route('programs.index')
+                                ->with('message','image depassed maximum size(800X665)');        
+        }else{
+
+           $program->create(['name'=>$request->name,'description'=>$request->description,'cover'=>$imagesave, 'file_name'=>$file_name]);  
+        
+          return redirect()->route('programs.index')
+                 ->with('success','program created successfully.');        
+
+        }
+   
            
        
-        return redirect()->route('programs.index')
-                            ->with('success','program created successfully.');
+       
     }
 
     /**

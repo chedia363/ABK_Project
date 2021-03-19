@@ -131,7 +131,7 @@
 
 <div class="container-fluid" style="padding:0;">
 	@yield('content')
-  @include('layouts.front.footer')
+  @include('layouts.front.footer',['contactus' => $contactus])
 	</div>
 </div>
 <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
