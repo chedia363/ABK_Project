@@ -7,7 +7,7 @@
                 
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('aboutus.create') }}"> Add An aboutus</a>
+                <a class="btn btn-success" href="{{ route('aboutus.create') }}">@lang('admin.Add An aboutus')</a>
             </div>
         </div>
     </div>
@@ -18,21 +18,22 @@
         </div>
     @endif
    
-    <table class="table table-bordered">
+    <table class="responsive-table table table-bordered">
+        <tbody>
         <tr>
            
-            <th>Name</th>
+            <th>@lang('admin.Name')</th>
            
-            <th>Description</th>
-            <th width="280px">Action</th>
+            <th>@lang('admin.Description')</th>
+            <th width="280px">@lang('admin.Action')</th>
         </tr>
         @foreach ($aboutuss as $aboutus)
         <tr>
           
-            <td>{!! $aboutus->name !!}</td>
+            <td data-th="@lang('admin.Name')">{!! $aboutus->name !!}</td>
       
-            <td>{!! $aboutus->description !!}</td>
-            <td>
+            <td data-th="@lang('admin.Description')">{!! $aboutus->description !!}</td>
+            <td data-th="@lang('admin.Action')">
                 <form action="{{ route('aboutus.destroy',$aboutus->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ route('aboutus.show',$aboutus->id) }}">@lang('admin.Show')</a>
@@ -50,6 +51,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
   
     {!! $aboutuss->links() !!}

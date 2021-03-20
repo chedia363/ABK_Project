@@ -4,10 +4,10 @@
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h2>Add An aboutus</h2>
+            <h2>@lang('admin.Add An aboutus')</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('aboutus.index') }}"> Back</a>
+            <a class="btn btn-primary" href="{{ route('aboutus.index') }}">@lang('admin.Back')</a>
         </div>
     </div>
 </div>
@@ -29,20 +29,19 @@
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Name:</strong>
-                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                <strong>@lang('admin.Name:')</strong>
+                <input type="text" name="name" class="form-control" placeholder="@lang('admin.Name')" required>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>description:</strong>
-
-                <textarea class="form-control" name="description" id="description" rows="5" placeholder="Description" required></textarea>
+                <strong>@lang('admin.Description')</strong>
+                <textarea class="form-control" name="description" id="description" rows="5" placeholder="@lang('admin.Description')" required></textarea>
             </div>
         </div>
         
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">@lang('admin.Submit')</button>
         </div>
     </div>
    

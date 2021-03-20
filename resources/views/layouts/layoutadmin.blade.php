@@ -16,8 +16,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="{{ asset('bower_components/admin-lte/plugins/fontawesome-free/css/all.min.css') }}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('bower_components/admin-lte/dist/css/adminlte.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/style-rtladmin.css') }}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
     @else
     <link rel="stylesheet" href="{{ asset('bower_components/admin-lte/plugins/fontawesome-free/css/all.min.css') }}">
@@ -25,6 +27,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap-rtl.css') }}">
     <link rel="stylesheet" href="{{ asset('css/adminLTErtl.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style-rtladmin.css') }}">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     @endif
 </head>
 <body class="hold-transition sidebar-mini">
@@ -35,7 +38,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><span class="lnr lnr-menu"></span></a>
       </li>
       
     </ul>
@@ -49,8 +52,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge">15</span>
+        <span class="lnr lnr-earth" style="color: #aa802d;"></span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <span class="dropdown-header">
@@ -71,7 +73,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- logout Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="fa fa-user"></i>
+        <span class="lnr lnr-user" style="color: #aa802d;"></span>
          
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
@@ -79,11 +81,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         
             <a class="dropdown-item" href="{{ route('logout') }}">
-                {{ __('Logout') }}
+               @lang('front.Logout')
            </a>   
            
            <a class="dropdown-item" href="{{ route('admin.profile', auth()->user()->id) }}">
-                {{ ('front.My Profile') }}
+           @lang('front.My Profile')
            </a> 
             
                                 
@@ -103,14 +105,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background:#0c233f">
     <!-- Brand Logo -->
     <a href="{{ route('Abakhome') }}" class="brand-link">
-      <img src="{{ asset('bower_components/admin-lte/dist/img/AdminLTELogo.svg') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
+      <img src="{{ asset('bower_components/admin-lte/dist/img/AdminLTELogo.svg') }}" alt="AdminLTE Logo" class="" style="padding-top:3rem;">
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="user-panel pb-3 mb-3 d-flex">
         
       </div>
 
@@ -119,32 +120,32 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <li><a href="{{ route('Abakhome') }}"><i class="fa fa-home"></i>@lang('front.Home')</a></li>
+               <li><a href="{{ route('home') }}"><span class="lnr lnr-home"></span>@lang('front.Home')</a></li>
                <li class="nav-item has-treeview menu-open">
                
                   <ul class="nav nav-treeview">
                   <li class="nav-item">
                         <a href="#" class="nav-link active">
-                          <i class="far fa-circle nav-icon"></i>
+                        <span class="lnr lnr-diamond"></span>
                           @lang('front.Our initiative')
                         </a>
                       </li>
 
                      <li class="nav-item @if(request()->segment(1) == 'activities') active @endif">
                         <a href="{{ route('activities.index') }}" class="nav-link active">
-                          <i class="far fa-circle nav-icon"></i>
+                        <span class="lnr lnr-unlink"></span>
                           @lang('front.Our activities')
                         </a>
                       </li>
                       <li class="nav-item @if(request()->segment(1) == 'fields') active @endif">
                         <a href="{{ route('fields.index') }}" class="nav-link active">
-                          <i class="far fa-circle nav-icon"></i>
+                        <span class="lnr lnr-leaf"></span>
                           @lang('front.Our fields')
                         </a>
                       </li>
                       <li class="nav-item @if(request()->segment(1) == 'programs') active @endif">
                         <a href="{{ route('programs.index') }}" class="nav-link active">
-                          <i class="far fa-circle nav-icon"></i>
+                        <span class="lnr lnr-linearicons"></span>
                           @lang('front.Our programs')
                         </a>
                       </li>
@@ -156,43 +157,43 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       </li>                        
                       <li class="nav-item @if(request()->segment(1) == 'contactus') active @endif">
                         <a href="{{ route('contactus.index') }}" class="nav-link active">
-                          <i class="far fa-circle nav-icon"></i>
+                        <span class="lnr lnr-question-circle"></span>
                           @lang('front.Contact us')
                         </a>
                       </li>  
                       <li class="nav-item @if(request()->segment(1) == 'policiesprcdural') active @endif">
                         <a href="{{ route('policiesprcdural.index') }}" class="nav-link active">
-                          <i class="far fa-circle nav-icon"></i>
+                        <span class="lnr lnr-phone-handset"></span>
                           @lang('front.Policies and procedural guides')
                         </a>
                       </li> 
                       <li class="nav-item @if(request()->segment(1) == 'teams') active @endif">
                         <a href="{{ route('teams.index') }}" class="nav-link active">
-                          <i class="far fa-circle nav-icon"></i>
+                        <span class="lnr lnr-book"></span>
                           @lang('front.Board of Directors')
                         </a>
                       </li> 
                       <li class="nav-item @if(request()->segment(1) == 'vision') active @endif">
                         <a href="{{ route('vision.index') }}" class="nav-link active">
-                          <i class="far fa-circle nav-icon"></i>
+                        <span class="lnr lnr-users"></span>
                           @lang('front.Our vision')
                         </a>
                       </li> 
                       <li class="nav-item @if(request()->segment(1) == 'messages') active @endif">
                         <a href="{{ route('messages.index') }}" class="nav-link active">
-                          <i class="far fa-circle nav-icon"></i>
+                        <span class="lnr lnr-eye"></span>
                           @lang('front.Our Message')
                         </a>
                       </li> 
                       <li class="nav-item @if(request()->segment(1) == 'invests') active @endif">
                         <a href="{{ route('invests.index') }}" class="nav-link active">
-                          <i class="far fa-circle nav-icon"></i>
+                        <span class="lnr lnr-envelope"></span>
                           @lang('front.Invest with us')
                         </a>
                       </li> 
                       <li class="nav-item @if(request()->segment(1) == 'partners') active @endif">
                         <a href="{{ route('partners.index') }}" class="nav-link active">
-                          <i class="far fa-circle nav-icon"></i>
+                        <span class="lnr lnr-layers"></span>
                           @lang('front.Our partners')
                         </a>
                       </li> 
@@ -216,12 +217,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <h1 class="m-0 text-dark">@lang('front.Abeq')</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
+            <ol class="breadcrumb float-sm-right" style="font-weight: bold;">
               <li class="breadcrumb-item"><a href="#">@lang('front.Home')</a></li>
               <li class="breadcrumb-item active">@lang('front.Starter Page')</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
+        @if(Route::currentRouteName() == 'home')
+        <div class="bannerdashbord">
+          <div class="row mb-2 justify-content-center">
+            <div class="col-sm-12">
+                <div class="container-fluid" data-aos="zoom-out" data-aos-delay="100">
+                  <div class="col-xl-6" style="justify-content: center; align-items: center; margin: auto; text-align: center; opacity: 0.9; border-radius: 20px; padding: 3rem; background: #fff; margin-top: 8rem; font-family: 'ArbFONTS-GE_Dinar_Two_Light-1'; font-size: 25px;}">
+                    <p class="titleabak">@lang('front.Association registered in the Ministry of Human Resources with the number (1345) dated 01/20/1442 AH')</p>
+                  </div>
+                </div>
+            </div><!-- /.col -->
+          </div>
+        </div>
+        @endif
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
@@ -229,26 +243,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <div class="container">
     @yield('content')
 </div>
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-    <div class="p-3">
-      <h5>Title</h5>
-      <p>Sidebar content</p>
-    </div>
-  </aside>
-  <!-- /.control-sidebar --> 
+<!-- ///////////////////// -->
  </div><!-- /.container-fluid -->
     </div>
   
   <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->
-    <div class="float-right d-none d-sm-inline">
-
-    </div>
     <!-- Default to the left -->
-  </footer>
+    <p>@lang('front.All rights reserved for Abaq Youth Association  2021 c')</p> 
+</footer>
 </div>
 <!-- ./wrapper -->
 

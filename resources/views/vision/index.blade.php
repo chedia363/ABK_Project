@@ -12,28 +12,29 @@
                 
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('vision.create') }}"> Add a vision</a>
+                <a class="btn btn-success" href="{{ route('vision.create') }}">@lang('admin.Add a vision')</a>
             </div>
         </div>
     </div>
    
 
    
-    <table class="table table-bordered">
+    <table class="responsive-table table table-bordered">
+        <tbody>
         <tr>
            
-            <th>Name</th>
+            <th>@lang('admin.Name')</th>
            
-            <th>Description</th>
-            <th width="280px">Action</th>
+            <th>@lang('admin.Description')</th>
+            <th width="280px">@lang('admin.Action')</th>
         </tr>
         @foreach ($vision as $vision)
         <tr>
           
-            <td>{!! $vision->name !!}</td>
+            <td data-th="@lang('admin.Name')">{!! $vision->name !!}</td>
       
-            <td>{!! $vision->description !!}</td>
-            <td>
+            <td data-th="@lang('admin.Description')">{!! $vision->description !!}</td>
+            <td data-th="@lang('admin.Action')">
                 <form action="{{ route('vision.destroy',$vision->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ route('vision.show',$vision->id) }}">@lang('admin.Show')</a>
@@ -51,6 +52,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
   
       

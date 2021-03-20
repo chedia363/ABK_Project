@@ -12,32 +12,33 @@
                 
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('invests.create') }}"> Create New invest</a>
+                <a class="btn btn-success" href="{{ route('invests.create') }}">@lang('admin.Create New invest')</a>
             </div>
         </div>
     </div>
    
 
    
-    <table class="table table-bordered">
+    <table class="responsive-table table table-bordered">
+        <tbody>
         <tr>
            
-            <th>Invest Number</th>
-            <th>Invest Picture</th>
+            <th>@lang('admin.Invest Number')</th>
+            <th>@lang('admin.Invest Picture')</th>
            
-            <th width="280px">Action</th>
+            <th width="280px">@lang('admin.Action')</th>
         </tr>
         @foreach ($invests as $invests)
         <tr>
           
-            <td>{{ $invests->file_name }}</td>
-            <td>  
+            <td data-th="@lang('admin.Invest Number')">{{ $invests->file_name }}</td>
+            <td data-th="@lang('admin.Invest Picture')">  
                 @if(isset($invests->cover))
                     <img src="{{ asset("storage/$invests->cover") }}" alt="" class="img-fluid" style="width: 30%;">
                 @endif
             </td>
           
-            <td>
+            <td data-th="@lang('admin.Action')">
                 <form action="{{ route('invests.destroy',$invests->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ route('invests.show',$invests->id) }}">@lang('admin.Show')</a>
@@ -55,6 +56,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
   
     

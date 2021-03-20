@@ -7,7 +7,7 @@
                 
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('programs.create') }}"> Create New program</a>
+                <a class="btn btn-success" href="{{ route('programs.create') }}">@lang('admin.Create New program')</a>
             </div>
         </div>
     </div>
@@ -18,25 +18,26 @@
         </div>
     @endif
    
-    <table class="table table-bordered">
+    <table class="responsive-table table table-bordered">
+        <tbody>
         <tr>
            
-            <th>Name</th>
-            <th>program Picture</th>
-            <th>Description</th>
-            <th width="280px">Action</th>
+            <th>@lang('admin.Name')</th>
+            <th>@lang('admin.program Picture')</th>
+            <th>@lang('admin.Description')</th>
+            <th width="280px">@lang('admin.Action')</th>
         </tr>
         @foreach ($programs as $program)
         <tr>
           
-            <td>{{ $program->name }}</td>
-            <td>  
+            <td data-th="@lang('admin.Name')">{{ $program->name }}</td>
+            <td data-th="@lang('admin.program Picture')">  
                 @if(isset($program->cover))
                     <img src="{{ asset("storage/$program->cover") }}" alt="" class="img-fluid" style="width: 30%;">
                 @endif
             </td>
-            <td>{{ $program->description }}</td>
-            <td>
+            <td data-th="@lang('admin.Description')">{{ $program->description }}</td>
+            <td data-th="@lang('admin.Action')">
                 <form action="{{ route('programs.destroy',$program->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ route('programs.show',$program->id) }}">@lang('admin.Show')</a>
@@ -54,6 +55,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
   
     {!! $programs->links() !!}

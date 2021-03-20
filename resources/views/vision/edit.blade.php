@@ -3,10 +3,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit form</h2>
+                <h2>@lang('admin.Edit form')</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('vision.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('vision.index') }}">@lang('admin.Back')</a>
             </div>
         </div>
     </div>
@@ -37,8 +37,8 @@
            <div class="form-row">
                    
                    <div class="form-group col-md-12">
-                       <label for="name">@lang('admin.description') </label>
-                       <textarea class="form-control" name="description" id="description" rows="5" placeholder="Description" required>{!! $vision->description !!}</textarea>
+                       <label for="name">@lang('admin.Description')</label>
+                       <textarea class="form-control" name="description" id="description" rows="5" placeholder="@lang('admin.Description')" required>{!! $vision->description !!}</textarea>
 
                    </div>
            </div>
@@ -48,7 +48,7 @@
          <div class="row">
        
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">@lang('admin.Submit')</button>
             </div>
         </div>
    

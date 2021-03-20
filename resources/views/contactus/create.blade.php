@@ -4,10 +4,10 @@
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h2>Add contactus</h2>
+            <h2>@lang('admin.Add contactus')</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('contactus.index') }}"> Back</a>
+            <a class="btn btn-primary" href="{{ route('contactus.index') }}">@lang('admin.Back')</a>
         </div>
     </div>
 </div>
@@ -29,16 +29,16 @@
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>@lang('front.Adress Name'):</strong>
-                <input type="text" name="addres_Name" class="form-control" placeholder="Name" required>
+                <strong>@lang('admin.Adress Name')</strong>
+                <input type="text" name="addres_Name" class="form-control" placeholder="@lang('admin.Name')" required>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
 
           <div class="form-group">
   
-              <strong>@lang('front.phone'):</strong>
-              <input name="phoneNmber" type="text" class="form-control" placeholder="@lang('front.phone')" required>
+              <strong>@lang('admin.phone')</strong>
+              <input name="phoneNmber" type="text" class="form-control" placeholder="@lang('admin.phone')" required>
           
           </div>
            
@@ -47,8 +47,8 @@
 
           <div class="form-group">
   
-              <strong>@lang('front.Fax Number'):</strong>
-              <input name="faxNmber" type="text" class="form-control" placeholder="@lang('front.Fax Number')" required>
+              <strong>@lang('admin.Fax Number')</strong>
+              <input name="faxNmber" type="text" class="form-control" placeholder="@lang('admin.Fax Number')" required>
           
           </div>
            
@@ -57,8 +57,8 @@
 
           <div class="form-group">
   
-              <strong>@lang('front.Mobile Number'):</strong>
-              <input name="mobileNmber" type="text" class="form-control" placeholder="@lang('front.Mobile Number')" required>
+              <strong>@lang('front.mobile Number')</strong>
+              <input name="mobileNmber" type="text" class="form-control" placeholder="@lang('admin.Mobile Number')" required>
           
           </div>
            
@@ -67,14 +67,14 @@
 
           <div class="form-group">
   
-              <strong>@lang('front.Email'):</strong>
-              <input name="email" type="email" class="form-control" placeholder="@lang('front.Email')" required>
+              <strong>@lang('admin.Email'):</strong>
+              <input name="email" type="email" class="form-control" placeholder="@lang('admin.Email')" required>
           
           </div>
            
         </div>         
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">@lang('admin.Submit')</button>
         </div>
     </div>
    

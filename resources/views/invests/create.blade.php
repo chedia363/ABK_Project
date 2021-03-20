@@ -4,10 +4,10 @@
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h2>Add New invests</h2>
+            <h2>@lang('admin.Create New invest')</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('invests.index') }}"> Back</a>
+            <a class="btn btn-primary" href="{{ route('invests.index') }}">@lang('admin.Back')</a>
         </div>
     </div>
 </div>
@@ -29,8 +29,8 @@
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Invest Number:</strong>
-                <input type="text" name="file_name" class="form-control" placeholder="Invest Number" required>
+                <strong>@lang('admin.Invest Number')</strong>
+                <input type="text" name="file_name" class="form-control" placeholder="@lang('admin.Invest Number')" required>
             </div>
         </div>
   
@@ -39,7 +39,7 @@
             <input type="file" name="cover" id="cover" class="form-control" required>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">@lang('admin.Submit')</button>
         </div>
     </div>
    

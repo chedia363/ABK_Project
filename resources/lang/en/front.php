@@ -115,5 +115,8 @@ return [
     'Prev Page' => 'Prev Page',
     'Page' => 'Page',
     'of' => 'of',
+    'Starter Page' => 'Starter Page',
+    'Contact us'                 => 'Contact us',
+    'All rights reserved for Abaq Youth Association  2021 c' => 'All rights reserved for Abaq Youth Association  2021 c',
     
 ];

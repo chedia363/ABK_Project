@@ -7,7 +7,7 @@
                 
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('activities.create') }}"> Add An activities</a>
+                <a class="btn btn-success" href="{{ route('activities.create') }}"> @lang('admin.Add An activities')</a>
             </div>
         </div>
     </div>
@@ -18,21 +18,22 @@
         </div>
     @endif
    
-    <table class="table table-bordered">
+    <table class="responsive-table table table-bordered">
+        <tbody>
         <tr>
            
-            <th>Name</th>
+            <th>@lang('admin.Name')</th>
            
-            <th>Description</th>
-            <th width="280px">Action</th>
+            <th>@lang('admin.Description')</th>
+            <th width="280px">@lang('admin.Action')</th>
         </tr>
         @foreach ($activities as $activities)
         <tr>
           
-            <td>{!! $activities->name !!}</td>
+            <td data-th="@lang('admin.Name')">{!! $activities->name !!}</td>
       
-            <td>{!! $activities->description !!}</td>
-            <td>
+            <td data-th="@lang('admin.Description')">{!! $activities->description !!}</td>
+            <td data-th="@lang('admin.Action')">
                 <form action="{{ route('activities.destroy',$activities->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ route('activities.show',$activities->id) }}">@lang('admin.Show')</a>
@@ -50,6 +51,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
   
       
