@@ -18,7 +18,7 @@ class HomefrontController extends Controller
         $contactus = Contactus::first();
         $vision = Vision::first();
         $messages = Messages::first();
-        $partners = Partners::first();
+        $partners = Partners::all();
         return view('front.index', compact(
             'contactus',
             'vision',
