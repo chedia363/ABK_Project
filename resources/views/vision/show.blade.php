@@ -13,12 +13,7 @@
     </div>
    
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>@lang('admin.Back')</strong>
-                {{ $vision->name }}
-            </div>
-        </div>
+      
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>@lang('admin.Description:')</strong>

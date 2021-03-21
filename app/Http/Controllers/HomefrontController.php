@@ -7,13 +7,24 @@ use App\Aboutus;
 use App\Policiesprcduralmanuals;
 use App\Teams;
 use App\Contactus;
+use App\Vision;
+use App\Messages;
+use App\Partners;
 use DB;
 class HomefrontController extends Controller
 {
     public function Abakhome()
     {
         $contactus = Contactus::first();
-        return view('front.index', compact('contactus'));
+        $vision = Vision::first();
+        $messages = Messages::first();
+        $partners = Partners::first();
+        return view('front.index', compact(
+            'contactus',
+            'vision',
+            'messages',
+            'partners'
+        ));
     }
     public function initiative()
     {

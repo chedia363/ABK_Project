@@ -23,7 +23,7 @@
         <tbody>
         <tr>
            
-            <th>@lang('admin.Name')</th>
+          
            
             <th>@lang('admin.Description')</th>
             <th width="280px">@lang('admin.Action')</th>
@@ -31,7 +31,7 @@
         @foreach ($vision as $vision)
         <tr>
           
-            <td data-th="@lang('admin.Name')">{!! $vision->name !!}</td>
+           
       
             <td data-th="@lang('admin.Description')">{!! $vision->description !!}</td>
             <td data-th="@lang('admin.Action')">

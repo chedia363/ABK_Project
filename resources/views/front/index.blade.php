@@ -9,9 +9,9 @@
 @section('content')
 @include('layouts.front.bannerhome')
 @include('layouts.front.social')
-@include('layouts.front.vision')
-@include('layouts.front.messages')
+@include('layouts.front.vision', ['vision' => $vision])
+@include('layouts.front.messages', ['messages' => $messages])
 @include('layouts.front.develop')
-@include('layouts.front.partners')
+@include('layouts.front.partners', ['partners' => $partners])
 @include('layouts.front.map')
 @endsection

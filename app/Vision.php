@@ -8,6 +8,6 @@ class Vision extends Model
 {
     protected $table = 'vision_a_b_k';
     protected $fillable = [
-        'name', 'description'
+         'description'
     ];
 }
