@@ -25,14 +25,7 @@
     <form action="{{ route('messages.update',$messages->id) }}" method="POST" class="form" enctype="multipart/form-data"> 
         @csrf
         @method('PUT')
-           <div class="form-row">
-                   
-                   <div class="form-group col-md-6">
-                       <label for="name">@lang('admin.Name') </label>
-                       <input type="text" name="name" id="name" placeholder="@lang('admin.Name')" class="form-control" value="{{ $messages->name }}" required>
-                   </div>
-                   
-           </div>
+  
 
            <div class="form-row">
                    

@@ -8,6 +8,6 @@ class Messages extends Model
 {
     protected $table = 'messages_a_b_k';
     protected $fillable = [
-        'name', 'description'
+        'description'
     ];
 }

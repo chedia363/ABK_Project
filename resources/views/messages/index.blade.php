@@ -23,7 +23,7 @@
         <tbody>
         <tr>
            
-            <th>@lang('admin.Name')</th>
+           
            
             <th>@lang('admin.Description')</th>
             <th width="280px">@lang('admin.Action')</th>
@@ -31,7 +31,7 @@
         @foreach ($messages as $messages)
         <tr>
           
-            <td data-th="@lang('admin.Name')">{!! $messages->name !!}</td>
+            
       
             <td data-th="@lang('admin.Description')">{!! $messages->description !!}</td>
             <td data-th="@lang('admin.Action')">

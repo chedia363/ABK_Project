@@ -7,7 +7,7 @@
           <div class="row">
             <div class="content" style="width:45rem">
             <h3>@lang('front.messages')</h3>
-              <p class="titleabak">@lang('front.To be the leading institution in the field of caring for young people and youth for our region and our kingdom in line with our Islamic values')</p>
+              <p class="titleabak">{!! $messages['description'] !!}</p>
             </div>
           </div>
         </div>
