@@ -12,28 +12,29 @@
                 
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('messages.create') }}"> Add a messages</a>
+                <a class="btn btn-success" href="{{ route('messages.create') }}">@lang('admin.Add a messages')</a>
             </div>
         </div>
     </div>
    
 
    
-    <table class="table table-bordered">
+    <table class="responsive-table table table-bordered">
+        <tbody>
         <tr>
            
-            <th>Name</th>
+            <th>@lang('admin.Name')</th>
            
-            <th>Description</th>
-            <th width="280px">Action</th>
+            <th>@lang('admin.Description')</th>
+            <th width="280px">@lang('admin.Action')</th>
         </tr>
         @foreach ($messages as $messages)
         <tr>
           
-            <td>{!! $messages->name !!}</td>
+            <td data-th="@lang('admin.Name')">{!! $messages->name !!}</td>
       
-            <td>{!! $messages->description !!}</td>
-            <td>
+            <td data-th="@lang('admin.Description')">{!! $messages->description !!}</td>
+            <td data-th="@lang('admin.Action')">
                 <form action="{{ route('messages.destroy',$messages->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ route('messages.show',$messages->id) }}">@lang('admin.Show')</a>
@@ -51,6 +52,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
   
       

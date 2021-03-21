@@ -21,7 +21,8 @@ return [
 
 
            
-    'Logout'                     => 'خروج',           
+    'Logout'                     => 'خروج',    
+    'My Profile'                     => 'ملفي',        
     
      
     'Search'                     => 'ابحث',       

@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit invests</h2>
+                <h2>@lang('admin.Edit invests')</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('invests.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('invests.index') }}">@lang('admin.Back')</a>
             </div>
         </div>
     </div>
@@ -55,7 +55,7 @@
          <div class="row">
        
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">@lang('admin.Submit')</button>
             </div>
         </div>
    

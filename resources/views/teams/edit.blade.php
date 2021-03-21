@@ -3,10 +3,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit form</h2>
+                <h2>@lang('admin.Edit form')</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('teams.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('teams.index') }}">@lang('admin.Back')</a>
             </div>
         </div>
     </div>
@@ -37,8 +37,8 @@
            <div class="form-row">
                    
                    <div class="form-group col-md-12">
-                       <label for="description">@lang('admin.description') </label>
-                       <input type="text" name="description" id="description" placeholder="@lang('admin.description')" class="form-control" value="{{ $teams->description }}" required>
+                       <label for="description">@lang('admin.Description') </label>
+                       <input type="text" name="description" id="description" placeholder="@lang('admin.Description')" class="form-control" value="{{ $teams->description }}" required>
 
                    </div>
            </div>
@@ -48,7 +48,7 @@
          <div class="row">
        
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">@lang('admin.Submit')</button>
             </div>
         </div>
    

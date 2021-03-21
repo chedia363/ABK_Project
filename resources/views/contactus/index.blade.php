@@ -7,7 +7,7 @@
                 
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('contactus.create') }}"> Add A contactus</a>
+                <a class="btn btn-success" href="{{ route('contactus.create') }}">@lang('admin.Add A contactus')</a>
             </div>
         </div>
     </div>
@@ -18,26 +18,27 @@
         </div>
     @endif
    
-    <table class="table table-bordered">
+    <table class="responsive-table table table-bordered">
+        <tbody>
         <tr>
            
-            <th>@lang('front.Adress Name')</th>
-            <th>@lang('front.phone')</th>
-            <th>@lang('front.Fax Number')</th>
-            <th>@lang('front.Mobile Number')</th>
-            <th>@lang('front.Email')</th>
-            <th width="280px">Action</th>
+            <th>@lang('admin.Adress Name')</th>
+            <th>@lang('admin.phone')</th>
+            <th>@lang('admin.Fax Number')</th>
+            <th>@lang('admin.Mobile Number')</th>
+            <th>@lang('admin.Email')</th>
+            <th width="280px">@lang('admin.Action')</th>
         </tr>
         @foreach ($contactus as $contactus)
         <tr>
           
-            <td>{!! $contactus->addres_Name !!}</td>
-            <td>{{ $contactus->phoneNmber }}</td>
-            <td>{{ $contactus->faxNmber }}</td>
-            <td>{{ $contactus->mobileNmber }}</td>
-            <td>{{ $contactus->email }}</td>
+            <td data-th="@lang('admin.Adress Name')">{!! $contactus->addres_Name !!}</td>
+            <td data-th="@lang('admin.phone')">{{ $contactus->phoneNmber }}</td>
+            <td data-th="@lang('admin.Fax Number')">{{ $contactus->faxNmber }}</td>
+            <td data-th="@lang('admin.Mobile Number')">{{ $contactus->mobileNmber }}</td>
+            <td data-th="@lang('admin.Email')">{{ $contactus->email }}</td>
             
-            <td>
+            <td data-th="@lang('admin.Action')">
                 <form action="{{ route('contactus.destroy',$contactus->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ route('contactus.show',$contactus->id) }}">@lang('admin.Show')</a>
@@ -55,6 +56,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
   
       

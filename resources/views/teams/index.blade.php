@@ -12,28 +12,28 @@
                 
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('teams.create') }}"> Add member</a>
+                <a class="btn btn-success" href="{{ route('teams.create') }}">@lang('admin.Add member')</a>
             </div>
         </div>
     </div>
    
 
    
-    <table class="table table-bordered">
+    <table class="responsive-table table table-bordered">
         <tr>
            
-            <th>Name</th>
+            <th>@lang('admin.Name')</th>
            
-            <th>Description</th>
-            <th width="280px">Action</th>
+            <th>@lang('admin.Description')</th>
+            <th width="280px">@lang('admin.Action')</th>
         </tr>
         @foreach ($teams as $teams)
         <tr>
           
-            <td>{!! $teams->name !!}</td>
+            <td data-th="@lang('admin.Name')">{!! $teams->name !!}</td>
       
-            <td>{!! $teams->description !!}</td>
-            <td>
+            <td data-th="@lang('admin.Description')">{!! $teams->description !!}</td>
+            <td data-th="@lang('admin.Action')">
                 <form action="{{ route('teams.destroy',$teams->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ route('teams.show',$teams->id) }}">@lang('admin.Show')</a>

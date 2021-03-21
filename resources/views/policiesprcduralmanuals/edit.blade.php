@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit Product</h2>
+                <h2>@lang('admin.Edit Product')</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('policiesprcdural.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('policiesprcdural.index') }}">@lang('admin.Back')</a>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
            <div class="form-row">
                    
                    <div class="form-group col-md-6">
-                       <label for="name">@lang('admin.Name') </label>
+                       <label for="name">@lang('admin.Name')</label>
                        <input type="text" name="name" id="name" placeholder="@lang('admin.Name')" class="form-control" value="{{ $policiesprcduralmanuals->name }}">
                    </div>
                    
@@ -53,7 +53,7 @@
          <div class="row">
        
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">@lang('admin.Submit')</button>
             </div>
         </div>
    

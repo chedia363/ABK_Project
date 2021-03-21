@@ -132,5 +132,76 @@ return [
     'Directed by'  => 'إخراج',
     'Produced by'  => 'مونتاج',
     'Coordinate'  => 'تنسيق',
+    'Add An activities'  => 'أضف أنشطة',
+    'Action'  => 'الإجراءات ',
+    'about us'  => 'المعلومات',
+    'Edit form'  => 'تحرير النموذج',
+    'Submit'  => 'إرسال',
+    'Add New Product'  => 'إنشاء منتج جديد',
+    'Field Picture'  => 'الصورة ',
+    'Show Product'  => 'عرض المنتج',
+    'Edit Product'  => 'تحرير المنتج',
+    'Create New program'  => 'إنشاء برنامج جديد',
+    'program Picture'  => 'صورة البرنامج',
+    'Add New program'  => 'إضافة برنامج جديد',
+    'Show program'  => 'عرض البرنامج',
+    'Edit Program'  => 'تحرير البرنامج',
+    'Add An aboutus'  => 'أضف معلومات',
+    'Add A contactus'  => 'أضف اتصل بنا',
+    'phone'  => 'هاتف',
+    'Fax Number'  => 'فاكس',
+    'Mobile Number'  => 'موبايل',
+    'Adress Name'  => 'العنوان',
+    'Add contactus'  => 'أضف اتصل بنا',
+    'contact us'  => 'اتصل بنا',
+    'Email'  => 'البريد الإلكتروني',
+    'Create New policies'  => 'إنشاء سياسات جديدة',
+    'file Name'  => 'اسم الملف',
+    'actions file'  => 'ملف الإجراءات',
+    'Add member'  => 'إضافة عضو',
+    'member'  => 'عضو',
+    'Add a vision'  => 'أضف رؤية',
+    'Our vision'  => 'رؤيتنا',
+    'Add a messages'  => 'أضف رسائل',
+    'Our messages'  => 'رسائلنا',
+    'Create New invest'  => 'إنشاء استثمار جديد',
+    'Invest Number'  => 'رقم الاستثمار',
+    'Invest Picture'  => 'الصورة',
+    'Show invests'  => 'عرض الاستثمارات',
+    'Edit invests'  => 'تحرير الاستثمارات',
+    'Create New partner'  => 'إنشاء شريك جديد',
+    'Our partners'  => 'شركاؤنا',
+    'Add New partner'  => 'إضافة شريك جديد',
+    'Show partners'  => 'عرض الشركاء',
+    'Partner'  => 'شريك',
+    'Edit partner'  => 'تحرير الشريك',
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+
+    
+    
+    
+    
+    
+    
+
   
 ];

@@ -4,10 +4,10 @@
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h2>Add New Product</h2>
+            <h2>@lang('admin.Add New Product')</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('fields.index') }}"> Back</a>
+            <a class="btn btn-primary" href="{{ route('fields.index') }}">@lang('admin.Back')</a>
         </div>
     </div>
 </div>
@@ -29,17 +29,16 @@
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Name:</strong>
-                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                <strong>@lang('admin.Name:')</strong>
+                <input type="text" name="name" class="form-control" placeholder="@lang('admin.Name')" required>
             </div>
         </div>
-
         <div class="form-group">
             <label for="cover">@lang('admin.Cover') </label>
             <input type="file" name="cover" id="cover" class="form-control" required>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">@lang('admin.Submit')</button>
         </div>
     </div>
    

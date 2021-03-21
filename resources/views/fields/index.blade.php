@@ -11,32 +11,33 @@
         <div class="col-lg-12 margin-tb">
             
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('fields.create') }}"> Create New Product</a>
+                <a class="btn btn-success" href="{{ route('fields.create') }}">@lang('admin.Add New Product')</a>
             </div>
         </div>
     </div>
    
  
    
-    <table class="table table-bordered">
+    <table class="responsive-table table table-bordered">
+        <tbody>
         <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Field Picture</th>
-            
-            <th width="280px">Action</th>
+            <th>@lang('admin.No')</th>
+            <th>@lang('admin.Name')</th>
+            <th>@lang('admin.Field Picture')</th>
+           
+            <th width="280px">@lang('admin.Action')</th>
         </tr>
         @foreach ($fields as $field)
         <tr>
-            <td>{{ ++$i }}</td>
-            <td>{{ $field->name }}</td>
-            <td>  
+            <td data-th="@lang('admin.No')">{{ ++$i }}</td>
+            <td data-th="@lang('admin.Name')">{{ $field->name }}</td>
+            <td data-th="@lang('admin.Field Picture')">  
                 @if(isset($field->cover))
                     <img src="{{ asset("storage/$field->cover") }}" alt="" class="img-fluid" style="width: 30%;">
                 @endif
             </td>
            
-            <td>
+            <td data-th="@lang('admin.Action')">
                 <form action="{{ route('fields.destroy',$field->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ route('fields.show',$field->id) }}">@lang('admin.Show')</a>
@@ -54,6 +55,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
   
     {!! $fields->links() !!}

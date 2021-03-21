@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit form</h2>
+                <h2>@lang('admin.Edit form')</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('contactus.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('contactus.index') }}">@lang('admin.Back')</a>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
            <div class="form-row">
                    
                    <div class="form-group col-md-6">
-                       <label for="name">@lang('front.Adress Name'): </label>
+                       <label for="name">@lang('admin.Adress Name')</label>
                        <input type="text" name="addres_Name" id="addres_Name" placeholder="@lang('admin.Adress Name')" class="form-control" value="{{ $contactus->addres_Name }}" required>
                    </div>
                    
@@ -38,7 +38,7 @@
            <div class="form-row">
                    
                    <div class="form-group col-md-12">
-                       <label for="name">@lang('front.phone'): </label>
+                       <label for="name">@lang('admin.phone')</label>
                        <input type="text" name="phoneNmber" id="phoneNmber" placeholder="@lang('admin.phone')" class="form-control" value="{{ $contactus->phoneNmber }}" required>
 
                    </div>
@@ -46,7 +46,7 @@
           <div class="form-row">
                    
                    <div class="form-group col-md-12">
-                       <label for="name">@lang('front.Fax Number'): </label>
+                       <label for="name">@lang('admin.Fax Number')</label>
                        <input type="text" name="faxNmber" id="faxNmber" placeholder="@lang('admin.Fax Number')" class="form-control" value="{{ $contactus->faxNmber }}" required>
 
                    </div>
@@ -54,26 +54,21 @@
            <div class="form-row">
                    
                    <div class="form-group col-md-12">
-                       <label for="name">@lang('front.Mobile Number'): </label>
+                       <label for="name">@lang('front.mobile Number')</label>
                        <input type="text" name="mobileNmber" id="mobileNmber" placeholder="@lang('admin.Mobile Number')" class="form-control" value="{{ $contactus->mobileNmber }}" required>
 
                    </div>
            </div>
           <div class="form-row">
-                   
                    <div class="form-group col-md-12">
-                       <label for="name">@lang('front.Email'): </label>
+                       <label for="name">@lang('admin.Email')</label>
                        <input type="text" name="email" id="email" placeholder="@lang('front.Email')" class="form-control" value="{{ $contactus->email }}" required>
-
                    </div>
            </div>           
-
          <div class="row">
-       
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">@lang('admin.Submit')</button>
             </div>
         </div>
-   
     </form></div>
 @endsection

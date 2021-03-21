@@ -12,32 +12,31 @@
                 
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('partners.create') }}"> Create New partner</a>
+                <a class="btn btn-success" href="{{ route('partners.create') }}">@lang('admin.Create New partner')</a>
             </div>
         </div>
     </div>
-   
 
-   
-    <table class="table table-bordered">
+    <table class="responsive-table table table-bordered">
+        <tbody>
         <tr>
            
             
-            <th>@lang('front.Our partners')</th>
+            <th>@lang('admin.Our partners')</th>
            
-            <th width="280px">Action</th>
+            <th width="280px">@lang('admin.Action')</th>
         </tr>
         @foreach ($partners as $partners)
         <tr>
           
            
-            <td>  
+            <td data-th="@lang('admin.Our partners')">  
                 @if(isset($partners->cover))
                     <img src="{{ asset("storage/$partners->cover") }}" alt="" class="img-fluid" style="width: 30%;">
                 @endif
             </td>
           
-            <td>
+            <td data-th="@lang('admin.Action')">
                 <form action="{{ route('partners.destroy',$partners->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ route('partners.show',$partners->id) }}">@lang('admin.Show')</a>
@@ -55,6 +54,7 @@
             </td>
         </tr>
         @endforeach
+        </tbody>
     </table>
   
     
