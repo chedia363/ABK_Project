@@ -4,7 +4,7 @@ return [
 
     'Password'              => 'Password',  
     'About us'              => 'About us',         
-    'Policies and procedural guides'              => 'Policies and procedural guides',  
+    'Governance'              => 'Governance',  
     'Our initiative'                   => 'Our initiative',  
     'Our vision'                   => 'Our vision',                     
     'Our Message'                   => 'Our Message',      
@@ -20,6 +20,7 @@ return [
     'Confirm Password'      => 'Confirm Password',
     'mobile Number'         => 'mobile Number',
     'Address'               => 'Address',
+    'Reports' => 'Reports',
 
     /////////////////  language abak
     'Abeq' => 'Abeq',

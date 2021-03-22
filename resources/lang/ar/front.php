@@ -80,11 +80,12 @@ return [
     'in lines' => 'في سطور',
     'The General Assembly' => 'الجمعية العمومية',
     'Structure of the Board of Directors' => 'هيكل مجلس الإدارة',
-    'Policies and procedural guides' => 'السياسات والأدلة الإجرائية',
+    'Governance' => 'الحوكمة',
     'Bylaw of the Board of Directors' => 'لائحة مجلس الإدارة',
     'Bylaw for appointing the CEO' => 'لائحة تعيين الرئيس التنفيذي',
     'Bylaw of administrative and financial affairs' => 'لائحة الشؤون الإدارية والمالية',
     'Our initiative' => 'مبادرتنا',
+    'Reports' => 'التقارير',
     'Our fields' => 'مجالاتنا',
     'Saudi Arabia' => 'المملكة العربية السعودية',
     'Bisha Governorate' => 'محافظة بيشة',
@@ -96,7 +97,7 @@ return [
     'Active learning' => 'التعلم النشط',
     'email' => 'البريد الإلكتروني ',
     'abeq2020@gmail.com' => 'abeq2020@gmail.com',
-    'All rights reserved for Abaq Youth Association  2021 c' => 'جميع الحقوق محفوظة لجمعية عبق الشبابية 2021',
+    'All rights reserved for Abaq Youth Association  2021 c' => 'جميع الحقوق محفوظة ل جمعية عبق الشبابية 2021',
    
     'read more' => 'المزيد',
 
@@ -113,7 +114,7 @@ return [
     'We shared the pay' => 'شاركنا الأجر',
     'messages' => 'رسالتنا',
     'messages' => 'رسالتنا',
-    'Our partners' => 'شركائنا',
+    'Our partners' => 'شركاؤنا ',
     'training and development' => 'التدريب و التطوير',
     'Consulting' => 'الاستشارات',
     'Training platform' => 'منصة التدريب',
@@ -179,6 +180,8 @@ return [
     'Page' => 'الصفحة',
     'of' => 'إلى',
     'Starter Page' => 'إلى',
+    'Connect with us' => 'تواصل معنا',
+    
    
     
 

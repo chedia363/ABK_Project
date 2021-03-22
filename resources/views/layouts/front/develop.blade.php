@@ -15,12 +15,19 @@
             </div>
           </div>
           <div class="row">
+            <div class="col-xl-5" style="justify-content:center; align-item:center; text-align:center; margin:auto;">
+                <div class="buttondevelop">
+                  <a href="#" class="btn-training scrollto">
+                      @lang('front.Training platform')
+                  </a>
+                </div>
+              </div>
               <div class="col-xl-5" style="justify-content:center; align-item:center; text-align:center; margin:auto;">
-              <div class="buttondevelop">
-            <a href="#" class="btn-training scrollto">
-                @lang('front.Training platform')
-            </a>
-        </div>
+                <div class="buttondevelop">
+                  <a href="#" class="btn-training1 scrollto">
+                      @lang('front.Reports')
+                  </a>
+                </div>
               </div>
           </div>
         </div>
