@@ -52,7 +52,7 @@ class AdminProgramsController extends Controller
         $width = $file_size[0];
         $height= $file_size[1];
         
-        if($width > 800 && $height > 665){
+        if($width != 800 && $height != 665 ){
             return redirect()->route('programs.index')
                                 ->with('message','image depassed maximum size(800X665)');        
         }else{
@@ -60,7 +60,7 @@ class AdminProgramsController extends Controller
            $program->create(['name'=>$request->name,'description'=>$request->description,'cover'=>$imagesave, 'file_name'=>$file_name]);  
         
           return redirect()->route('programs.index')
-                 ->with('success','program created successfully.');        
+                 ->with('success',__('front.created successfully.'));        
 
         }
    
