@@ -76,7 +76,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-12 col-md-12 d-flex align-items-center">
-        <div class="col-xl-3 col-md-3">
+        <div class="col-xl-4 col-md-3">
         <h1 class="logo mr-auto">
 			  <a href="{{ route('Abakhome') }}">
 			  <img src="{{ asset('img/logo.svg') }}" alt="">
@@ -84,7 +84,7 @@
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
         </div>
-        <div class="col-xl-5 col-md-6">
+        <div class="col-xl-4 col-md-5">
         <nav class="nav-menu d-none d-lg-block">
             <ul>
               <li class="drop-down"><a href="{{ route('members') }}">@lang('front.About us')</a>
@@ -94,7 +94,7 @@
                   <li><a href="{{ route('members') }}">@lang('front.Structure of the Board of Directors')</a></li>
                 </ul>
               </li>
-			  <li class="drop-down"><a href="{{ route('policies') }}">@lang('front.Policies and procedural guides')</a>
+			  <li class="drop-down"><a href="{{ route('policies') }}">@lang('front.Governance')</a>
                 <ul>
                   <li><a href="{{ route('policies') }}">@lang('front.Bylaw of the Board of Directors')</a></li>
                   <li><a href="{{ route('policies') }}">@lang('front.Bylaw for appointing the CEO')</a></li>
@@ -111,7 +111,7 @@
             </ul>
           </nav><!-- .nav-menu -->
         </div>
-        <div class="col-xl-4 col-md-3">
+        <div class="col-xl-4 col-md-4">
           <div class="searchmobile" style="display:flex;">
             <div>
               <img src="{{ asset('img/vision.svg') }}" alt="">

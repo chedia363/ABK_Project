@@ -8,6 +8,7 @@
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
         <a href="#" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
         <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
+        <a href="#" class="youtube"><i class="icofont-envelope"></i></a>
       </div>
 
       <div class="mr-md-auto text-center text-md-left">
