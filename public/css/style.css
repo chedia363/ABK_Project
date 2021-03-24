@@ -419,7 +419,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #vision .imgmotifcircle{
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
   width: 50%;
 }
@@ -1236,18 +1236,18 @@ section {
   position: relative;
   font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
   margin-top: 0;
-  direction: rtl;
+  direction: ltr;
   color: #0c233f;
-  float: right;
+  float: left;
 }
 
 #faq .section-title h2:before{
   position: absolute;
-  right: 0%;
+  left: 0%;
   top: -10px;
   height: 50px;
   width: 7px;
-  margin-right: -30px;
+  margin-left: -30px;
   background: #aa802d;
   content: "";
   z-index: 1;
@@ -1374,6 +1374,8 @@ section {
   color: #aa802d;
   font-weight: bold;
   font-size: 20px;
+  direction: ltr;
+  float: left;
 }
 
 .faq .faq-list .icon-close {
@@ -2393,7 +2395,8 @@ section {
   justify-content: center;
   width: 20rem;
   font-weight: 400;
-  font-size: 2.5rem;
+  padding: 10px;
+  font-size: 25px;
   margin-bottom: 30px;
   box-shadow: 2px 3px 14px 2px rgb(0 0 0 / 16%);
   align-items: center;
@@ -2597,18 +2600,18 @@ section {
   position: relative;
   font-family: 'GE dinar two';
   margin-top: 0;
-  direction: rtl;
+  direction: ltr;
   color: #0c233f;
-  float: right;
+  float: left;
 }
 
 #initiative .section-title h2:before{
   position: absolute;
-  right: 0%;
+  left: 0%;
   top: -7px;
   height: 50px;
   width: 7px;
-  margin-right: -30px;
+  margin-left: -30px;
   background: #aa802d;
   content: "";
   z-index: 1;
@@ -2648,18 +2651,18 @@ section {
   position: relative;
   font-family: "ArbFONTS-GE_Dinar_Two_Light-1";
   margin-top: 0;
-  direction: rtl;
+  direction: ltr;
   color: #0c233f;
-  float: right;
+  float: left;
 }
 
 #fields .section-title h2:before{
   position: absolute;
-  right: 0%;
+  left: 0%;
   top: -7px;
   height: 50px;
   width: 7px;
-  margin-right: -30px;
+  margin-left: -30px;
   background: #aa802d;
   content: "";
   z-index: 1;
@@ -3162,6 +3165,10 @@ img.topbottom {
 .invest3 .investnumero {
   font-size: 45px;
 }
+}
+
+#faq .buttonbackpol{
+  margin: .5rem 4rem;
 }
 
 
