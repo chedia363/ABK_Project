@@ -1311,6 +1311,11 @@ section{
   z-index: 1;
 }
 
+#faq .buttonbackpol{
+  margin: .5rem 4rem;
+  font-family: 'ARBFONTS-GE_DINAR_TWO_LIGHT-1';
+}
+
 
 /*--------------------------------------------------------------
 # Contact
@@ -3150,6 +3155,10 @@ img.topbottom {
     .invest3 .investnumero {
       font-size: 45px;
     }
+  }
+  .buttonsearcha{
+    direction: rtl;
+    float: right;
   }
 
 

@@ -22,11 +22,11 @@ return [
 
            
     'Logout'                     => 'خروج',    
-    'My Profile'                     => 'ملفي',        
+    'My Profile'                     => 'ملفي',   
+    'Back'                 => 'عودة',      
     
-     
-    'Search'                     => 'ابحث',       
-    'Search...'                  => '...ابحث',       
+          
+    'Search'                  => 'ابحث',       
     'Your account'               => 'دخول',   
     'My account'               => 'حسابي',       
     'Contact us'                 => 'اتصل بنا',         

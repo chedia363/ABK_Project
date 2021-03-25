@@ -37,9 +37,10 @@
 </style>
     <section id="faq" class="faq section-padding" style="margin-top:5rem; background:#e6e6e6;">
       <div class="container" data-aos="fade-up">
+      <a href="{{ route('policies') }}" class="btn buttonbackpol" style="margin: .5rem 4rem;">@lang('front.Back')</a>
         <ul class="faq-list" data-aos="fade-up">
           <li>
-            <div class='embed-responsive' style='height:100%;' >
+            <div class='embed-responsive' style='height:100%;'>
               <div class="top-bar">
                   <button class="btn" id="prev-page">
                   @lang('front.Prev Page')
