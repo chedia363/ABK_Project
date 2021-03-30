@@ -9,6 +9,7 @@
                                     <li class="contact-abaqsocial1">
                                         <p class="contabeqscial" style="color:#0c233f;">@lang('front.Connect with us')</p>
                                     </li>
+                                    
                                     <li class="contact-abaqsocial">
                                         <i class="icon bx bxl-twitter"></i>
                                         <i class="icon bx bxl-instagram"></i>
@@ -25,12 +26,15 @@
                                 </div>
                             </ul>
                         </div>
+                @endif 
+                  
                         <div class="col-md-4">
                             <img src="{{ asset('img/logowhite.svg') }}" alt="" style="width:100%;">
                             <div class="content-footerabk-right">
                             <p style="text-align:center;">@lang('front.All rights reserved for Abaq Youth Association  2021 c')</p> 
                             </div>
                         </div>
+                @if(!empty($contactus))
                         <div class="col-md-4">
                             <div class="content-footerabk">
                                 <h3>{{ $contactus->addres_Name }}</h3>
