@@ -121,5 +121,8 @@ return [
     'Contact us'                 => 'Contact us',
     'Back'                 => 'Back', 
     'All rights reserved for Abaq Youth Association  2021 c' => 'All rights reserved for Abaq Youth Association  2021 c',
+    'Login'                 => 'Login', 
+    'logout'                 => 'logout',  
+    'Remember Me'                    => 'Remember Me',       
     
 ];

@@ -18,7 +18,7 @@ return [
 
     'mobile Number'              => 'رقم الهاتف',
     'Address'                    => 'العنوان',
-
+    'Remember Me'                    => 'تذكرنى',
 
            
     'Logout'                     => 'خروج',    
@@ -182,7 +182,8 @@ return [
     'Starter Page' => 'إلى',
     'Connect with us' => 'تواصل معنا',
     
-   
+    'Login'                 => 'تسجيل الدخول', 
+    'logout'                 => 'تسجيل الخروج',   
     
 
     
