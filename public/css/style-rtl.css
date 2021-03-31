@@ -552,7 +552,7 @@ section{
   text-align: center;
   padding-bottom: 30px;
   position: relative;
-  padding:0 5rem;
+  padding:1rem 5rem;
 }
 
 .section-title h2 {
@@ -1198,7 +1198,7 @@ section{
     padding: 0rem 0rem;
   }
   .faq .faq-list button.btn{
-   padding:0 !important;
+   padding:0;
   }
   .faq .faq-list .page-info{
    font-size: 15px !important;
@@ -1248,7 +1248,9 @@ section{
   color: #aa802d;
   font-weight: bold;
   font-size: 20px;
+  display: none;
 }
+
 
 .faq .faq-list .icon-close {
   color: #aa802d;
@@ -3160,6 +3162,28 @@ img.topbottom {
     direction: rtl;
     float: right;
   }
+  @media(max-width:1200px){
+    .mobileview{
+      display: block !important;
+    }
+    .webview{
+      display: none !important;
+    }
+  }
+  @media(min-width:1200px){
+    .mobileview{
+      display: none !important;
+    }
+    .webview{
+      display: block !important;
+    }
+  }
+  .faq .btn-defaultmobile{
+    background: #bc9e0e;
+    padding: 0px 7px !important;
+    border-radius: 4px !important;
+  }
+
 
 
 
