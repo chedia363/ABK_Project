@@ -227,7 +227,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="row mb-2 justify-content-center">
             <div class="col-sm-12">
                 <div class="container-fluid" data-aos="zoom-out" data-aos-delay="100">
-                  <div class="col-xl-6" style="justify-content: center; align-items: center; margin: auto; text-align: center; opacity: 0.9; border-radius: 20px; padding: 3rem; background: #fff; margin-top: 8rem; font-family: 'ArbFONTS-GE_Dinar_Two_Light-1'; font-size: 25px;}">
+                  <div class="col-xl-6" style="justify-content: center; align-items: center; margin: auto; text-align: center; opacity: 0.9; border-radius: 20px; padding: 3rem; background: #fff; margin-top: 8rem; font-family: 'ArbFONTS-GE_Dinar_Two_Light-1'; font-size: 25px;">
                     <p class="titleabak">@lang('front.Association registered in the Ministry of Human Resources with the number (1345) dated 01/20/1442 AH')</p>
                   </div>
                 </div>
