@@ -1,78 +1,56 @@
-	    <section id="faq" class="faq section-padding" style="background:#e6e6e6;">
-	      <div class="container" data-aos="fade-up">
-	          <hr> <br>
-	      	<div class="row">
-				<div class="col-md-12">
-					<div class="section-title">
-						<h2>@lang('front.Policies and procedural guides')</h2>
-					</div>
+
+	<section id="services" class="services section-padding" style="background:#e6e6e6;">
+      <div class="container" data-aos="fade-up">
+	  	<div class="row">
+			<div class="col-md-12">
+				<div class="section-title pdfsectiontitle">
+					<h2>@lang('front.Policies and procedural guides')</h2>
 				</div>
 			</div>
-	
-	        <ul class="faq-list" data-aos="fade-up">
-	          <li>
-				<a data-toggle="collapse" class="collapsed" href="#faq1">@lang('front.A regulation for appointing the board of directors')<span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
-				<div id="faq1" class="collapse" data-parent=".faq-list">
-					<div class='embed-responsive webview' style='padding-bottom:150%'>
-						<object data="../img/6.pdf" type="application/pdf" height="300px" width="100%" class="responsive"></object>
-					</div>
-					<div class='embed-responsive mobileview' style='height:auto; padding: 0px 25px;'>
-						<h3 style="font-size:20px;">6.pdf</h3>
-						<span ><a href="../img/6.pdf" target="_blank"><button type="button" class="btn btn-defaultmobile"><span class="lnr lnr-download"></span></button></a></span>
-					</div>
-				</div>
-	          </li>
-	          <li>
-	            <a data-toggle="collapse" href="#faq2" class="collapsed">@lang('front.Executive Director Appointment Regulations') <span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
-	            <div id="faq2" class="collapse" data-parent=".faq-list">
-					<div class='embed-responsive webview' style='padding-bottom:150%'>
-						<object data="../img/6.pdf" type="application/pdf" height="300px" width="100%" class="responsive"></object>
-					</div>
-					<div class='embed-responsive mobileview' style='height:auto; padding: 0px 25px;'>
-						<h3 style="font-size:20px;">6.pdf</h3>
-						<span ><a href="../img/6.pdf" target="_blank"><button type="button" class="btn btn-defaultmobile"><span class="lnr lnr-download"></span></button></a></span>
-					</div>
-	            </div>
-	          </li>
-
-	          <li>
-	            <a data-toggle="collapse" href="#faq3" class="collapsed">@lang('front.List of Chartered Accountant nomenclature') <span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
-	            <div id="faq3" class="collapse" data-parent=".faq-list">
-					<div class='embed-responsive webview' style='padding-bottom:150%'>
-						<object data="../img/6.pdf" type="application/pdf" height="300px" width="100%" class="responsive"></object>
-					</div>
-					<div class='embed-responsive mobileview' style='height:auto; padding: 0px 25px;'>
-						<h3 style="font-size:20px;">6.pdf</h3>
-						<span ><a href="../img/6.pdf" target="_blank"><button type="button" class="btn btn-defaultmobile"><span class="lnr lnr-download"></span></button></a></span>
-					</div>
-	            </div>
-	          </li>
-	
-	          <li>
-	            <a data-toggle="collapse" href="#faq4" class="collapsed">@lang('front.Regulations for the election of the General Assembly')<span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
-	            <div id="faq4" class="collapse" data-parent=".faq-list">
-					<div class='embed-responsive webview' style='padding-bottom:150%'>
-						<object data="../img/6.pdf" type="application/pdf" height="300px" width="100%" class="responsive"></object>
-					</div>
-					<div class='embed-responsive mobileview' style='height:auto; padding: 0px 25px;'>
-						<h3 style="font-size:20px;">6.pdf</h3>
-						<span ><a href="../img/6.pdf" target="_blank"><button type="button" class="btn btn-defaultmobile"><span class="lnr lnr-download"></span></button></a></span>
-					</div>
-	            </div>
-	          </li>
-	
-	          <li>
-	            <a data-toggle="collapse" href="#faq5" class="collapsed">@lang('front.Committee call list') <span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
-	            <div id="faq5" class="collapse" data-parent=".faq-list">
-					<div class='embed-responsive webview' style='padding-bottom:150%'>
-						<object data="../img/6.pdf" type="application/pdf" height="300px" width="100%" class="responsive"></object>
-					</div>
-					<div class='embed-responsive mobileview' style='height:auto; padding: 0px 25px;'>
-						<h3 style="font-size:20px;">6.pdf</h3>
-						<span ><a href="../img/6.pdf" target="_blank"><button type="button" class="btn btn-defaultmobile"><span class="lnr lnr-download"></span></button></a></span>
-					</div>
-	            </div>
-	          </li>
-	        </ul>
-	      </div>
-	    </section>
+		</div>
+        <div class="row">
+          <div class="col-md-6" style="margin-bottom:20px;">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+			<img src="{{ asset('img/pdf-file.svg') }}" alt="">
+				<span class="downloadpdffile"><a href="../img/6.pdf" target="_blank"><button type="button" class="btn btn-defaultmobile"><span class="lnr lnr-download"></span></button></a></span>
+              	<h4><a href="#">@lang('front.A regulation for appointing the board of directors')</a></h4>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0" style="margin-bottom:20px;">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+			<img src="{{ asset('img/pdf-file.svg') }}" alt="">
+			<span class="downloadpdffile"><a href="../img/6.pdf" target="_blank"><button type="button" class="btn btn-defaultmobile"><span class="lnr lnr-download"></span></button></a></span>
+              <h4><a href="#">@lang('front.Executive Director Appointment Regulations')</a></h4>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0" style="margin-bottom:20px;">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+			<img src="{{ asset('img/pdf-file.svg') }}" alt="">
+			<span class="downloadpdffile"><a href="../img/6.pdf" target="_blank"><button type="button" class="btn btn-defaultmobile"><span class="lnr lnr-download"></span></button></a></span>
+              <h4><a href="#">@lang('front.List of Chartered Accountant nomenclature')</a></h4>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0" style="margin-bottom:20px;">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+			<img src="{{ asset('img/pdf-file.svg') }}" alt="">
+			<span class="downloadpdffile"><a href="../img/6.pdf" target="_blank"><button type="button" class="btn btn-defaultmobile"><span class="lnr lnr-download"></span></button></a></span>
+              <h4><a href="#">@lang('front.Regulations for the election of the General Assembly')</a></h4>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0" style="margin-bottom:20px;">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
+			<img src="{{ asset('img/pdf-file.svg') }}" alt="">
+			<span class="downloadpdffile"><a href="../img/6.pdf" target="_blank"><button type="button" class="btn btn-defaultmobile"><span class="lnr lnr-download"></span></button></a></span>
+              <h4><a href="#">@lang('front.Committee call list')</a></h4>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0" style="margin-bottom:20px;">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
+			<img src="{{ asset('img/pdf-file.svg') }}" alt="">
+			<span class="downloadpdffile"><a href="../img/6.pdf" target="_blank"><button type="button" class="btn btn-defaultmobile"><span class="lnr lnr-download"></span></button></a></span>
+              <h4><a href="#">@lang('front.Committee call list')</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

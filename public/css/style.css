@@ -529,7 +529,7 @@ section {
   text-align: center;
   padding-bottom: 30px;
   position: relative;
-  padding:1rem 5rem;
+  padding: 0rem 5rem;
 }
 
 .section-title h2 {
@@ -1230,7 +1230,7 @@ section {
 .faq .faq-list a.collapsed .icon-close {
   display: none;
 }
-#faq .section-title h2{
+#services .section-title h2{
   font-size: 25px;
   margin-bottom: 1rem;
   position: relative;
@@ -1241,7 +1241,7 @@ section {
   float: left;
 }
 
-#faq .section-title h2:before{
+#services .section-title h2:before{
   position: absolute;
   left: 0%;
   top: -10px;
@@ -1254,7 +1254,7 @@ section {
 }
 
 @media(max-width:700px){
-  #faq .section-title h2{
+  #services .section-title h2{
     font-size: 19px;
   }
   .faq .faq-list a.collapsed {
@@ -1265,7 +1265,7 @@ section {
   padding-right: 0px;
   font-size: 15px;
 }
-#faq .section-title h2:before {
+#services .section-title h2:before {
   position: absolute;
   right: 0%;
   top: -9px;
@@ -2949,7 +2949,7 @@ section {
       font-size: 30px;
   }
   .section-title {
-    padding: 0 2rem;
+    padding: 0rem 2rem;
   }
   
   }
@@ -3098,7 +3098,7 @@ section {
         .paddingrow{
           padding-top: 0rem;
             }
-        #faq .section-title h2 {
+        #services .section-title h2 {
           font-size: 25px;
         }
         .invest1 .investnumero {
@@ -3172,26 +3172,90 @@ img.topbottom {
   margin: .5rem 4rem;
 }
 
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 6px;
+  background: #fff;
+  border-radius: 15px;
+  transition: 0.3s;
+  height: 100%;
+  position: relative;
+}
+.services .icon-box span.downloadpdffile{
+  position: absolute;
+  top: 65px;
+  right: 44px;
+  }
+  .services .icon-box .btn-defaultmobile{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+.services .icon-box:hover {
+  background: #fff;
+}
+
+.services .icon-box img {
+  float: left;
+  margin: 0 2rem;
+  width:70px;
+  height: auto;
+}
 @media(max-width:1200px){
-  .mobileview{
-    display: block !important;
+  .services .icon-box img {
+    float: left;
+    margin: 0 0rem !important;
+    width:70px;
+    height: auto;
   }
-  .webview{
-    display: none !important;
+  .services .icon-box h4{
+    margin-left: 0px !important;
   }
+  .services .icon-box span.downloadpdffile {
+    position: absolute;
+    top: 65px;
+    right: 10px !important;
 }
-@media(min-width:1200px){
-  .mobileview{
-    display: none !important;
-  }
-  .webview{
-    display: block !important;
-  }
+.buttondevelop{
+  margin-bottom: 30px !important;
 }
-.faq .btn-defaultmobile{
-  background: #bc9e0e;
-  padding: 0px 7px !important;
-  border-radius: 4px !important;
+
 }
+
+
+.services .icon-box h4 {
+  margin-left: 70px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.services .icon-box h4 a {
+  color: #606060;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+.services .icon-box h4 a:hover {
+  text-decoration: underline;
+}
+
+.services .icon-box .icon-box:hover h4 a {
+  color: #e03a3c;
+}
+
+.services .icon-box p {
+  margin-left: 70px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+
 
 
