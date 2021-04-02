@@ -1,34 +1,27 @@
-	    <section id="faq" class="faq section-padding" style="background:#e6e6e6;">
-	      <div class="container" data-aos="fade-up">
-	          <hr> <br>
-	      	<div class="row">
-				<div class="col-md-12">
-					<div class="section-title">
-						<h2>@lang('front.Policies and procedural guides')</h2>
-					</div>
+
+	<section id="services" class="services section-padding" style="background:#e6e6e6;">
+      <div class="container" data-aos="fade-up">
+	  	<div class="row">
+			<div class="col-md-12">
+				<div class="section-title pdfsectiontitle">
+					<h2>@lang('front.Policies and procedural guides')</h2>
 				</div>
 			</div>
-	
-	        <ul class="faq-list" data-aos="fade-up">
+		</div>
+        <div class="row">
+			@foreach ($policiesmnls as $policiesmnls)
+				
 			
-			   @foreach ($policiesmnls as $policiesmnls)
-					<li>
-					
-					
-						<a data-toggle="collapse" class="collapsed" href="#faq1">{{$policiesmnls->name}}<span class="icon-show lnr lnr-chevron-left"></span><span class="icon-close lnr lnr-chevron-down"></span></a>
-						<div id="faq1" class="collapse" data-parent=".faq-list">
-							<div class='embed-responsive webview' style='padding-bottom:150%'>
-								<object data="{{asset("storage/$policiesmnls->file_name")}}" type="application/pdf" height="300px" width="100%" class="responsive"></object>
-							</div>
-						
-							<div class='embed-responsive mobileview' style='height:auto; padding: 0px 25px;'>
-								<h3 style="font-size:20px;">{{$policiesmnls->name}}</h3>
-								<span ><a href="{{asset("storage/$policiesmnls->cover")}}" target="_blank"><button type="button" class="btn btn-defaultmobile"><span class="lnr lnr-download"></span></button></a></span>
-							</div>
-						</div>
-					</li>
-				@endforeach	
-	          
-	        </ul>
-	      </div>
-	    </section>
+			
+				<div class="col-md-6 mt-4 mt-md-0" style="margin-bottom:20px;">
+					<div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+					<img src="{{ asset('img/pdf-file.svg') }}" alt="">
+					<span class="downloadpdffile"><a href="{{ asset("storage/$policiesmnls->cover") }}" target="_blank"><button type="button" class="btn btn-defaultmobile"><span class="lnr lnr-download"></span></button></a></span>
+					<h4><a href="#">{{$policiesmnls->name}}</a></h4>
+					</div>
+				</div>
+				
+			@endforeach
+        </div>
+      </div>
+    </section>
