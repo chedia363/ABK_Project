@@ -8,6 +8,6 @@
 
 @section('content')
 {{-- @include('layouts.front.all_policy') --}}
-@include('layouts.front.pdfpolicy') 
+@include('layouts.front.pdfpolicy',['policiesmnls' => $policiesmnls]) 
 @include('layouts.front.social')
 @endsection

@@ -71,7 +71,11 @@ class HomefrontController extends Controller
     public function politics()
     {
         $contactus = Contactus::first();
-        return view('layouts.front.Policies', compact('contactus'));
+        $policiesmnls = Policiesprcduralmanuals::all();
+        return view('layouts.front.Policies', compact(
+            'contactus',
+            'policiesmnls'
+        ));
     }
     public function politics2()
     {
